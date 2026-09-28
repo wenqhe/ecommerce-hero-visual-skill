@@ -1,0 +1,25 @@
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.log
+
+# Local Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local environments and IDE files
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Temporary and build output
+*.tmp
+*.temp
+*.bak
+*.swp
+dist/
+build/
