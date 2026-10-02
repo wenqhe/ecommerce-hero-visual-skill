@@ -1,108 +1,169 @@
-# NORI Skill Test Result
+# NORI V2 Test Result
 
-Tested against NORI-test-case.md on 2026-09-28.
+Tested conceptually against NORI-test-case.md on 2026-09-28. No product or brand image asset is present, so this result validates the Planning-only path rather than image generation.
 
 ## 1. Structured Brief
 
-- Product: NORI 600 mL stainless steel travel tumbler.
-- Goal: communicate portable temperature retention during the autumn campaign and encourage purchase consideration.
-- Audience: consumers aged 18–35 with commuting and light-outdoor use cases.
-- Deliverables: one Chinese and one English 4:5 vertical PNG.
-- Confirmed claims: 316 stainless steel interior; keeps drinks hot or cold for up to 12 hours; one-click lock; leak-resistant on the go.
-- Confirmed promotion: CNY 129, valid 1–15 October 2026, with “Shop now” / “立即选购”.
+- Product: NORI 600 mL stainless steel travel tumbler;
+- goal: communicate portable temperature retention during the autumn campaign;
+- audience: consumers aged 18–35 with commuting and light-outdoor use cases;
+- planned outputs: one Chinese and one English 4:5 vertical PNG;
+- confirmed claims: 316 stainless steel interior, up to 12 hours hot or cold, one-click lock, leak-resistant on the go;
+- confirmed promotion: CNY 129, valid 1–15 October 2026.
 
-## 2. Evidence Status and Missing Information
+## 2. Reference Asset Inventory
 
-Confirmed written facts are sufficient for strategy and copy planning.
+| Type | Supplied assets | Status |
+|---|---:|---|
+| Product Reference Image | 0 | Missing blocker |
+| Product Detail Reference | 0 | Not supplied |
+| Brand Asset | 0 | Missing for official logo use |
+| Style Reference | 0 | Optional, not supplied |
+| Layout Reference | 0 | Optional, not supplied |
 
-Blocking inputs for final generation and fidelity QA:
+No Reference ID is created because no asset was supplied.
 
-- approved product reference image or cutout;
-- official logo artwork and verified placement;
-- visible product color, finish, proportions, lid, and structural details.
+## 3. Production Mode
+
+Planning-only Mode.
+
+Final product-fidelity generation is Blocked.
+
+## 4. Missing Information
+
+Blocking inputs:
+
+- approved full-product PR asset or approved cutout;
+- official BA logo if a logo is required in the output;
+- visible evidence for product color, finish, proportions, lid, lock, markings, and structural details.
 
 Optional enhancements:
 
+- PD assets;
 - brand colors and typography;
-- marketplace safe-area requirements;
-- approved prop and styling restrictions.
+- SR and LR assets;
+- marketplace safe areas;
+- approved prop restrictions.
 
-Status: strategy can proceed; final visual generation is Blocked.
+## 5. Product Reference Analysis
 
-## 3. Communication Hierarchy
+Status: Blocked.
 
-1. Headline: “轻装出行 温度随行” / “Travel Light. Keep It Warm.”
-2. Primary selling point: “12 小时保温保冷” / “Keeps drinks hot or cold for up to 12 hours”.
-3. Supporting evidence: 316 stainless steel interior; one-click lock; leak-resistant on the go.
-4. Promotion and action: CNY 129; 1–15 October 2026; “立即选购” / “Shop now”.
+No product visual attribute is confirmed. Silhouette, proportions, color, finish, material appearance, lid, lock, logo placement, markings, and other visible structures remain Unknown.
 
-## 4. Visual Directions
+## 6. Product Fidelity Lock
+
+| Attribute group | Reference IDs | Status | Rule |
+|---|---|---|---|
+| Silhouette and proportions | None | Unknown | Do not reconstruct from text |
+| Color and finish | None | Unknown | Do not infer |
+| Lid and lock structure | None | Unknown | Do not invent |
+| Logo and markings | None | Unknown | Require official BA and visible PR evidence |
+| Other product details | None | Unknown | Require PR or PD evidence |
+
+## 7. Communication Hierarchy
+
+1. 轻装出行 温度随行 / Travel Light. Keep It Warm.
+2. 12 小时保温保冷 / Keeps drinks hot or cold for up to 12 hours.
+3. 316 不锈钢内胆; 一键锁扣 防漏随行.
+4. CNY 129; 1–15 October 2026; 立即选购 / Shop now.
+
+## 8. Visual Directions
 
 ### A. Clean Product Hero
 
-- Warm neutral autumn background with a restrained seasonal gradient.
-- Product large and right of center; strongest ecommerce clarity.
-- Broad upper-left and lower-left negative space for type.
+- communication value: strongest ecommerce clarity;
+- required view: approved full-product hero view;
+- supporting references: none;
+- Reference Feasibility: Blocked;
+- Fidelity Risk: Blocked;
+- future preferred method: approved product cutout plus separately generated background.
 
 ### B. Commuter Context
 
-- Minimal urban commuting cues, such as abstract transit geometry or soft architectural light.
-- Emphasizes portability without showing unconfirmed product use or accessories.
-- Slightly more lifestyle-oriented while retaining a clear product focus.
+- communication value: daily-use relevance;
+- required view: approved product view compatible with scene placement;
+- supporting references: none;
+- Reference Feasibility: Blocked;
+- Fidelity Risk: Blocked;
+- additional risk: unverified interaction or accessories must not be generated.
 
 ### C. Light Outdoor Warmth
 
-- Soft autumn outdoor atmosphere with abstract foliage color and natural light.
-- Supports seasonal warmth and light-outdoor relevance.
-- Avoids props that touch, cover, or imply unconfirmed functions.
+- communication value: seasonal and light-outdoor mood;
+- required view: approved full-product view;
+- supporting references: none;
+- Reference Feasibility: Blocked;
+- Fidelity Risk: Blocked;
+- additional risk: props must not imply unsupported function.
 
-Recommended direction: A with a restrained commuter-lighting cue. It communicates quickly and minimizes fidelity risk.
+Recommended planning direction: A with a restrained commuting-light cue. It should be executed only after an approved PR asset is supplied.
 
-## 5. Layout Blueprint
+## 9. Reference Image Usage Plan
 
-- Product reference/cutout: right-center, approximately 40–45% of canvas height after the asset is supplied.
-- Brand/logo: one stable corner, using only the official asset.
-- Headline: upper-left.
-- Primary selling point: directly below headline.
-- Supporting facts: compact middle-left group.
-- Price, campaign dates, and CTA: lower-left.
-- Keep sufficient clear space around the product for silhouette verification.
-
-## 6. Text-Free Base Prompt
-
-Create a 4:5 vertical ecommerce hero-visual base using the approved NORI travel-tumbler reference image supplied at generation time. Preserve exactly the visible silhouette, proportions, color, finish, material appearance, lid and lock structure, logo placement, and other distinctive details. Place the product slightly right of center as the primary focal point. Use a clean warm autumn-inspired background with a subtle modern commuting mood, restrained soft side lighting, and clear negative space in the upper-left and lower-left for later typography. Do not add text, fake logos, badges, certifications, icons, extra product features, unverified accessories, or props that obscure the product. Do not infer any product property that is not visible in the approved reference.
-
-Generation status: Blocked until the approved product image is supplied.
-
-## 7. Chinese Copy Plan
-
-- Headline: 轻装出行 温度随行
-- Primary selling point: 12 小时保温保冷
-- Supporting point 1: 316 不锈钢内胆
-- Supporting point 2: 一键锁扣 防漏随行
-- Price: 秋日出行价 129 元
-- Period: 2026 年 10 月 1 日至 10 月 15 日
-- CTA: 立即选购
-
-## 8. English Copy Plan
-
-- Headline: Travel Light. Keep It Warm.
-- Primary selling point: Keeps drinks hot or cold for up to 12 hours
-- Supporting point 1: 316 stainless steel interior
-- Supporting point 2: One-click lock. Leak-resistant on the go.
-- Price: Autumn Travel Price CNY 129
-- Period: 1–15 October 2026
-- CTA: Shop now
-
-## 9. QA and Iteration
-
-| Category | First check | Action | Re-check |
+| Stage | Reference IDs | Status | Future method |
 |---|---|---|---|
-| Evidence accuracy | Pass | Kept all claims, price, dates, and CTA unchanged | Pass |
-| Unsupported claims | Pass | Added explicit exclusions for certifications, badges, added features, and inferred properties | Pass |
-| Product fidelity | Blocked | Required an approved reference image before generation | Blocked |
-| Text-free-first workflow | Revise | Made the prompt explicitly text-free and moved copy to separate plans | Pass |
-| Logo handling | Revise | Required an official asset instead of asking the model to recreate a logo | Pass |
-| Final visual hierarchy/readability | Blocked | Requires generated base and composed type for visual inspection | Blocked |
+| Product analysis | None | Blocked | Inspect PR and PD assets |
+| Background generation | None | Planning possible | Generate text-free background from approved strategy |
+| Product composition | None | Blocked | Use approved cutout or original product pixels |
+| Logo placement | None | Blocked | Directly place official BA asset |
+| Final QA | None | Blocked | Compare output side by side with PR, PD, and BA |
 
-Final QA status: the planning workflow passes. Final product generation and final-visual QA remain correctly blocked by missing approved product imagery and logo assets.
+## 10. Layout Blueprint
+
+- proposed product area: right-center, final crop and scale pending PR;
+- headline: upper-left;
+- primary selling point: below headline;
+- supporting facts: middle-left;
+- price, period, and CTA: lower-left;
+- official logo: placement pending BA.
+
+## 11. Text-free Prompt Plan
+
+After an approved PR asset is supplied, create a 4:5 background separately and preserve space for the approved product layer and later typography. Prefer the approved product cutout or original product pixels. Do not generate a tumbler from text, recreate a logo, invent a color or lid, add badges, or introduce unsupported accessories.
+
+Generation status: Blocked until a usable PR asset is supplied.
+
+## 12. Confirmed Copy Plan
+
+Chinese:
+
+- 轻装出行 温度随行
+- 12 小时保温保冷
+- 316 不锈钢内胆
+- 一键锁扣 防漏随行
+- 秋日出行价 129 元
+- 2026 年 10 月 1 日至 10 月 15 日
+- 立即选购
+
+English:
+
+- Travel Light. Keep It Warm.
+- Keeps drinks hot or cold for up to 12 hours
+- 316 stainless steel interior
+- One-click lock. Leak-resistant on the go.
+- Autumn Travel Price CNY 129
+- 1–15 October 2026
+- Shop now
+
+## 13. Side-by-side Reference QA
+
+| Category | Status | Reason |
+|---|---|---|
+| Reference traceability | Pass | No supplied asset or invented ID |
+| Product silhouette and proportions | Blocked | No PR asset |
+| Color, finish, and material | Blocked | No PR asset |
+| Lid, lock, labels, and markings | Blocked | No PR or PD asset |
+| Official logo | Blocked | No BA asset |
+| Copy accuracy | Pass | Confirmed wording preserved |
+| Text-free-first method | Pass | Product reconstruction is prohibited and direct composition is planned |
+| Final visual comparison | Blocked | No output and no reference assets |
+
+## 14. Iteration Record
+
+- Issue: V1-style prompt could appear executable despite missing product imagery;
+- Severity: Blocking;
+- Revision: changed the result to Planning-only Mode, removed any executable product reconstruction, added inventory, Fidelity Lock, and usage-plan blockers;
+- Re-check: Pass for planning behavior; final generation remains correctly Blocked.
+
+Final status: the V2 Planning-only workflow passes. Reference-backed generation and final fidelity QA remain Blocked until legitimate approved assets are supplied.

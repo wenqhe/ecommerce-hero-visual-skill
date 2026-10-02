@@ -1,0 +1,54 @@
+# Template only. Copy this file to input-manifest.yaml and update it for an actual task.
+# Remove reference categories or entries that are not supplied.
+# At least one valid product_references entry is required only for final Fidelity Generation.
+
+project:
+  name: Example Ecommerce Hero Visual
+
+visual_inputs:
+  product_references:
+    - id: PR-01
+      file: inputs/product-images/product-front-primary.png
+      authority: user_approved
+      role: primary_product_identity
+
+  product_detail_references:
+    - id: PD-01
+      file: inputs/product-images/product-detail-lock.png
+      authority: user_approved
+      role: structure_verification
+
+  brand_assets:
+    - id: BA-01
+      file: inputs/brand-assets/logo.png
+      authority: official
+      role: logo
+
+  style_references:
+    - id: SR-01
+      file: inputs/style-references/style-01.jpg
+      authority: inspiration_only
+      role: lighting_and_atmosphere
+
+  layout_references:
+    - id: LR-01
+      file: inputs/layout-references/layout-01.jpg
+      authority: inspiration_only
+      role: composition_and_information_hierarchy
+
+text_inputs:
+  brand: null
+  product_name: null
+  target_audience: null
+  headline: null
+  selling_points: []
+  price: null
+  campaign_period: null
+  cta: null
+
+output:
+  ratio: "4:5"
+  format: PNG
+  languages:
+    - zh-CN
+    - en

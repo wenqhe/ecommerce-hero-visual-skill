@@ -1,48 +1,94 @@
 # Quality Checklist
 
-Use Pass, Revise, or Blocked for each applicable category. A category is blocked when the required source asset or confirmed fact is unavailable.
+Use Pass, Revise, Blocked, or Not Visible for each applicable item. A category is Blocked when required source evidence is unavailable. Do not mark a final visual complete while a Blocking or High issue remains.
 
-## Evidence and Accuracy
+## Reference Intake and Traceability
+
+- Does every supplied reference have a stable Reference ID?
+- Is each asset classified as PR, PD, BA, SR, or LR?
+- Are authority, approved use, prohibited use, and limitations recorded?
+- Is every reference included in the Reference Image Usage Plan or explicitly marked unused?
+- Are conflicts and Unknown attributes recorded rather than inferred?
+
+## Production Mode
+
+- Is Reference-backed Fidelity Mode supported by at least one usable approved PR asset?
+- If no usable PR exists, is the work correctly limited to Planning-only Mode?
+- Is any concept mockup clearly labeled non-fidelity?
+
+## Side-by-side Product Fidelity
+
+Compare the output directly with applicable PR and PD assets:
+
+- silhouette and overall proportions;
+- visible color and finish;
+- material appearance;
+- logo, label, and printed-marking content and placement;
+- controls, buttons, openings, ports, handles, lids, hinges, seams, and joints;
+- number and arrangement of visible parts;
+- visible accessories;
+- camera angle and supported view;
+- product crop and occlusion;
+- unsupported additions or missing structures;
+- whether an Unknown area was invented.
+
+For every mismatch, record the Reference IDs, output observation, status, severity, and correction.
+
+## Brand Asset Fidelity
+
+- Are official logos and wordmarks taken directly from approved BA assets where possible?
+- Has any generation model redrawn, misspelled, distorted, or invented a brand mark?
+- Do brand colors and typography follow the supplied guidance?
+- Are Brand Assets placed without covering critical product details?
+
+## Style and Layout Isolation
+
+- Did SR assets transfer only approved mood, lighting, background treatment, color atmosphere, or texture?
+- Did LR assets transfer only composition, information density, visual hierarchy, text/product balance, or negative-space planning?
+- Did SR or LR introduce a product shape, color, material, logo, feature, accessory, fact, price, claim, or packaging element?
+- Was an SR or LR design copied too closely instead of being abstracted into principles?
+
+## Evidence and Copy Accuracy
 
 - Are all product claims traceable to confirmed input?
 - Are price, discount, dates, CTA, certifications, and promotional rules exact?
 - Are strategic proposals clearly separated from facts?
 - Is bilingual copy equivalent in meaning without adding claims?
 
-## Product Fidelity
-
-- Does the product match the approved reference in silhouette, proportions, color, finish, logo placement, and structure?
-- Are any unsupported parts, labels, badges, or accessories present?
-- Is the product unobscured enough to verify?
-
-## Communication
+## Communication and Composition
 
 - Can the viewer identify the product and core benefit in about three seconds?
-- Is the hierarchy clear and concise?
-- Is promotion visible without overpowering the product?
-- Is the CTA present only when confirmed and relevant?
-
-## Composition and Brand
-
 - Is the product the primary focus?
+- Is hierarchy clear and concise?
+- Is promotion visible without overpowering the product?
 - Is typography readable with sufficient contrast and spacing?
-- Is negative space intentional rather than empty or awkward?
-- Does the result match supplied brand guidance and canvas requirements?
-- Are props and visual effects relevant and non-misleading?
+- Is negative space intentional?
+- Do props and visual effects remain relevant and non-misleading?
+- Does the output comply with the canvas and ecommerce surface requirements?
 
-## Commercial Readiness
+## Severity
 
-- Is the visual suitable for the intended ecommerce surface?
-- Does it persuade through verified value rather than decoration or invented urgency?
-- Are separate language variants used when a combined bilingual layout would reduce clarity?
+- Blocking: product identity changed, a product structure or fact was invented, the wrong product or logo appears, or no valid PR supports the output;
+- High: major proportion, color, material, marking, control, part, accessory, or view mismatch;
+- Medium: visible integration, lighting, crop, or local-detail issue that reduces credibility without changing identity;
+- Low: minor polish issue that does not affect product truth or communication.
 
 ## Revision Record
 
 For every Revise item, record:
 
 - issue and severity;
-- affected area;
+- Reference IDs;
+- affected output area;
+- likely cause;
 - correction made;
 - re-check result.
 
-Do not mark the work complete while a blocking or high-severity issue remains unresolved.
+## Completion Rule
+
+Completion requires:
+
+- no unresolved Blocking or High issue;
+- no invented product fact or structure;
+- a completed Side-by-side Reference QA record;
+- or an explicit Blocked status explaining which verified input is missing.

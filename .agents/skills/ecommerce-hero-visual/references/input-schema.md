@@ -1,49 +1,97 @@
 # Input and Evidence Schema
 
-Use this schema to separate verified inputs from optional context and missing evidence.
+Use this schema to separate verified facts, controlled reference assets, strategic proposals, and missing evidence.
 
-## Core Inputs
+## Reference Asset Inventory
 
-Normally required for a faithful product visual:
+Assign every supplied reference a stable ID and record:
 
-- product reference image or approved product cutout;
+- Reference ID;
+- asset type;
+- source and authority;
+- file or attachment identity;
+- visible view or coverage;
+- approved use;
+- prohibited use;
+- quality limitations, occlusions, or uncertainty.
+
+Read [reference-image-workflow.md](reference-image-workflow.md) for the detailed templates and usage rules.
+
+## Five Reference Asset Types
+
+### Product Reference Image — PR
+
+The authoritative full-product visual source for silhouette, proportions, visible color, finish, material appearance, major structures, markings, and product identity.
+
+At least one usable PR asset is required for Reference-backed Fidelity Mode.
+
+### Product Detail Reference — PD
+
+An approved close-up or alternate view used to verify specific details such as controls, ports, locks, textures, seams, labels, or structural joints. A PD asset does not replace a full-product PR asset.
+
+### Brand Asset — BA
+
+Official logos, wordmarks, fonts, brand colors, graphic systems, or usage rules. Use official logo assets directly when possible; do not ask a generation model to recreate them.
+
+### Style Reference — SR
+
+An inspiration source for explicitly approved mood, lighting, background treatment, color atmosphere, or visual texture. It must not supply product facts, product identity, logos, accessories, claims, or packaging.
+
+### Layout Reference — LR
+
+A reference for composition, information density, visual hierarchy, text/product balance, and negative-space planning only.
+
+It must not influence product shape, color, material, logo, features, accessories, or facts. Extract layout principles rather than copying the reference design.
+
+## Core Factual Inputs
+
+Normally required for a faithful commercial output:
+
 - brand and product name;
 - confirmed selling points or approved copy;
 - canvas ratio or dimensions;
-- output language and file format.
-
-If the task is planning-only, the product image may be absent, but final product generation and fidelity QA remain blocked.
+- output language and file format;
+- at least one approved Product Reference Image for final fidelity generation.
 
 ## Conditional Inputs
 
 Required only when the requested visual uses them:
 
+- Product Detail References;
 - promotional price or offer;
 - discount or promotional rule;
 - campaign dates;
 - CTA;
 - certification, award, or badge artwork;
-- logo files and brand guidelines;
-- platform safe areas or marketplace requirements.
-
-Never infer a conditional input merely because similar ecommerce designs often contain it.
-
-## Helpful Context
-
-- target audience and use scenario;
-- campaign goal;
-- brand tone and colors;
-- preferred or prohibited visual styles;
-- product color variants;
+- Brand Assets and brand guidelines;
+- platform safe areas or marketplace requirements;
+- Style References;
+- Layout References;
 - approved props or environmental cues.
+
+Never infer a conditional input because similar ecommerce designs often contain it.
+
+## Production Modes
+
+### Reference-backed Fidelity Mode
+
+Use only when a usable approved PR asset is present. Product generation, composition, and final Side-by-side Reference QA may proceed.
+
+### Planning-only Mode
+
+Use when no usable PR asset is present. Strategy, layout, prompt planning, and copy planning may proceed, but final product-fidelity generation and final fidelity QA remain Blocked.
 
 ## Evidence Classification
 
 Classify every material item as one of:
 
-- **Confirmed fact:** explicitly supplied by the user or visible in an approved source asset.
-- **Strategic proposal:** a suggested tone, scene, layout, or wording treatment that does not assert a new product fact.
-- **Missing blocker:** required evidence without which faithful generation, composition, or QA cannot be completed.
-- **Optional enhancement:** useful context that can improve the result but is not necessary for the requested stage.
+- Confirmed fact: explicitly supplied by the user or an authoritative written source;
+- Reference evidence: directly visible in an approved PR, PD, or BA asset;
+- Strategic proposal: a suggested tone, scene, layout, or expression that does not assert a new product fact;
+- Missing blocker: required evidence without which faithful generation, composition, or QA cannot be completed;
+- Optional enhancement: useful context that can improve the result but is not necessary for the requested stage;
+- Unknown: a product attribute that is not visible or confirmed and must not be inferred.
 
-When sources conflict, stop using the disputed item and ask for the authoritative version or mark the output blocked.
+## Source Conflicts
+
+Do not silently choose between conflicting approved sources. Record the conflict, stop using the disputed attribute, and request or identify the authoritative source. SR and LR assets can never override PR, PD, BA, or confirmed facts.

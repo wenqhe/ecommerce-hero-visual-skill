@@ -23,3 +23,19 @@ venv/
 *.swp
 dist/
 build/
+
+# Local ecommerce task manifest
+input-manifest.yaml
+
+# Local reference assets
+inputs/product-images/*
+!inputs/product-images/.gitkeep
+
+inputs/brand-assets/*
+!inputs/brand-assets/.gitkeep
+
+inputs/style-references/*
+!inputs/style-references/.gitkeep
+
+inputs/layout-references/*
+!inputs/layout-references/.gitkeep

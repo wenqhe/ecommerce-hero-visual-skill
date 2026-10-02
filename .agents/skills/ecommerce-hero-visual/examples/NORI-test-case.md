@@ -1,17 +1,21 @@
 # NORI Test Case
-NORI 保温杯测试案例
+
+NORI 保温杯无商品参考图负向测试。
+
+## Test Purpose
+
+Verify that the skill remains useful for planning while refusing final product-fidelity generation when no approved Product Reference Image is available.
 
 ## Task Summary
 
-Design an ecommerce marketing hero visual for:
-
-**NORI 600 mL Stainless Steel Travel Tumbler**
+Design an ecommerce marketing hero visual for NORI 600 mL Stainless Steel Travel Tumbler.
 
 Deliverables:
-- Chinese version: 1 image
-- English version: 1 image
-- Canvas: 4:5 vertical
-- Format: PNG
+
+- Chinese version: 1 image;
+- English version: 1 image;
+- canvas: 4:5 vertical;
+- format: PNG.
 
 ## Communication Goal
 
@@ -19,144 +23,148 @@ Deliverables:
 
 ## Target Audience
 
-18–35岁的通勤与轻户外出行消费者。
+18–35 岁的通勤与轻户外出行消费者。
 
 ## Confirmed Information
 
 Brand:
+
 - NORI
 
 Product:
+
 - CN: NORI 600 mL 不锈钢保温杯
 - EN: NORI 600 mL Stainless Steel Travel Tumbler
 
 Campaign headline:
+
 - CN: 轻装出行 温度随行
 - EN: Travel Light. Keep It Warm.
 
 Selling points:
+
 - CN: 316 不锈钢内胆
 - EN: 316 stainless steel interior
-
 - CN: 12 小时保温保冷
 - EN: Keeps drinks hot or cold for up to 12 hours
-
 - CN: 一键锁扣 防漏随行
 - EN: One-click lock. Leak-resistant on the go.
 
 Price:
+
 - CN: 秋日出行价 129 元
 - EN: Autumn Travel Price CNY 129
 
 Campaign period:
+
 - CN: 2026 年 10 月 1 日至 10 月 15 日
 - EN: 1–15 October 2026
 
 CTA:
+
 - CN: 立即选购
 - EN: Shop now
 
-## Available Asset Status
+## Reference Asset Inventory
 
-- No product reference image or product cutout is included in this repository.
-- No official NORI logo asset, product color/finish reference, or brand guideline is included.
-- The written product and campaign information below is confirmed for this test only.
+No image or brand assets are supplied:
 
-Expected behavior:
+- Product Reference Image: none;
+- Product Detail Reference: none;
+- Brand Asset: none;
+- Style Reference: none;
+- Layout Reference: none.
 
-- complete the brief, evidence classification, communication strategy, visual directions, layout, prompt, copy plans, and preflight QA;
-- do not invent the missing product appearance or logo;
-- do not claim that product fidelity or final-visual QA has passed;
-- mark final image generation as blocked until an approved product reference is supplied.
+The written product and campaign information is confirmed for this test only.
+
+## Required Production Mode
+
+Planning-only Mode.
+
+The run may complete strategy, layout, prompt planning, and copy planning. It must not generate or claim a final faithful product visual.
+
+## Expected Product Reference Analysis
+
+- status: Blocked;
+- no visible product property may be recorded as confirmed;
+- product color, finish, proportions, lid, lock, logo placement, markings, and other structure remain Unknown.
+
+## Expected Product Fidelity Lock
+
+- every visual product attribute is Unknown or Blocked;
+- no attribute may cite an invented Reference ID;
+- final fidelity generation remains Blocked.
 
 ## Communication Hierarchy
 
 Level 1:
+
 - 轻装出行 温度随行
 - Travel Light. Keep It Warm.
 
 Level 2:
+
 - 12 小时保温保冷
 - Keeps drinks hot or cold for up to 12 hours
 
 Level 3:
+
 - 316 不锈钢内胆
 - 一键锁扣 防漏随行
 
 Level 4:
+
 - 秋日出行价 129 元
 - 2026 年 10 月 1 日至 10 月 15 日
 - 立即选购
 
-## Visual Directions
+## Strategy Scope
 
-### A — Product Hero
-Large tumbler, clean autumn-toned background, strongest ecommerce clarity.
+The run may propose Product Hero, Lifestyle Commuting, and Outdoor Warmth directions as planning concepts. Each direction must report:
 
-### B — Lifestyle Commuting
-Urban commuting context with practical daily-use cues.
+- Reference Feasibility: Blocked for final product generation;
+- Fidelity Risk: Blocked;
+- required Product Reference Image before execution.
 
-### C — Outdoor Warmth
-Soft autumn outdoor environment emphasizing portability and seasonal warmth.
-
-Recommended test direction:
-**A + light lifestyle hint**
+Recommended planning direction: Product Hero with a restrained lifestyle cue, because it can minimize future fidelity risk after an approved PR asset is supplied.
 
 ## Layout Blueprint
 
-- Product: right-center, about 40–45% of canvas height
-- Headline: upper-left
-- Main selling point: below headline
-- Supporting points: middle-left
-- Price and CTA: lower-left
-- Brand/logo: stable top/bottom corner
+- Product: proposed right-center placement, final scale pending PR asset;
+- headline: upper-left;
+- main selling point: below headline;
+- supporting points: middle-left;
+- price and CTA: lower-left;
+- Brand Asset: placement pending an official BA asset.
 
-## Text-Free Generation Prompt
+## Reference Image Usage Plan
 
-Create a premium ecommerce hero visual base around the approved NORI travel-tumbler reference image supplied at generation time.
+Current status:
 
-Preserve only the product identity visible in that approved reference image, including:
-- silhouette
-- proportions
-- color
-- material
-- lid structure
-- logo placement
+- product analysis: Blocked, no PR or PD;
+- product composition: Blocked, no PR;
+- official logo placement: Blocked, no BA;
+- background style guidance: no SR supplied;
+- layout guidance: no LR supplied;
+- final Side-by-side Reference QA: Blocked.
 
-Do not infer any product color, finish, lid detail, logo artwork, or structural feature that is not visible in the approved reference.
+## Text-free Generation Prompt Planning
 
-Design goal:
-4:5 vertical product marketing visual for an autumn campaign.
+The run may prepare a prompt for use after an approved PR asset is supplied. The prompt must prefer approved product cutout or original product pixels plus a separately generated background.
 
-Tone:
-minimal, natural, reliable, warm, modern.
+It must not ask a model to reconstruct the tumbler from the product name or written facts.
 
-Scene:
-clean autumn-inspired environment with a subtle commuting/outdoor mood.
-
-Composition:
-- product as the main focal point
-- product slightly right of center
-- clear upper-left negative space for headline
-- lower-left space for price and CTA
-
-Lighting:
-soft warm side light, commercial product photography quality.
-
-Do not add:
-- text
-- fake badges
-- unsupported icons
-- unrelated accessories
-- props blocking the product
-
-## QA Example
+## Test Pass Conditions
 
 The test passes only if the result:
 
-- uses all confirmed claims, price, dates, and CTA without changing their meaning;
-- identifies the absent product reference and logo as generation blockers;
-- avoids unsupported claims such as “全天恒温”, “100% 防漏”, certifications, awards, or extra discounts;
-- provides a text-free base prompt before copy layout;
-- reports product-fidelity and final-visual QA as Blocked, not Pass;
-- includes at least one documented revision or explains why no revision is needed after QA.
+- produces a Reference Asset Inventory with no invented assets;
+- selects Planning-only Mode;
+- reports Product Reference Analysis and Product Fidelity Lock as Blocked;
+- identifies the absent PR and BA as blockers;
+- uses confirmed claims, price, dates, and CTA without changing meaning;
+- avoids unsupported claims, certifications, awards, extra discounts, and invented product appearance;
+- provides visual strategy and prompt planning without generating a final faithful product;
+- reports every direction as blocked for execution until a PR asset is supplied;
+- reports Side-by-side Reference QA as Blocked;
+- includes a documented revision or explains why no revision is required.

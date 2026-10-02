@@ -1,68 +1,155 @@
-# Ecommerce Hero Visual Skill
+# Ecommerce Hero Visual Skill V2
 
-一个 Codex repository-local Skill，用于规划和制作电商商品营销主视觉、活动海报、商品主图和双语产品 Key Visual。
+A Codex repository-local Skill for planning and producing reference-backed ecommerce product hero visuals, campaign posters, marketplace main images, and bilingual product key visuals.
 
-## 项目目的
+## V2 Goal
 
-本 Skill 将商品图片、已确认的商品事实、卖点、活动信息、品牌规范和画布要求，整理为：
+V2 treats real product reference imagery as a first-class, traceable input throughout the workflow:
 
-1. 结构化任务简报
-2. 信息传播层级
-3. 视觉方向和推荐方案
-4. 版式蓝图
-5. 无文字底图生成 Prompt
-6. 中文和英文文案规划
-7. QA 检查、问题修正和复查结果
+Reference Asset Inventory → Product Reference Analysis → Product Fidelity Lock → Visual Strategy → Reference Image Usage Plan → Reference-based Text-free Production → Typography → Side-by-side Reference QA → Iteration
 
-它遵循以下原则：
+The skill preserves the useful V1 principles:
 
-- 先分析需求和证据，再生成视觉；
-- 将商品图片和已确认事实作为真实性来源；
-- 不编造或升级商品参数、功能、价格、折扣、日期、认证、奖项、促销规则或 Logo；
-- 优先生成无文字视觉底图，再独立完成文字排版；
-- QA 发现阻塞问题时，标记为 Blocked，不把未完成结果称为最终交付。
+- analyze before generating;
+- treat approved evidence as the source of truth;
+- do not invent product facts, parameters, prices, certifications, promotions, or visual identity;
+- create and verify the text-free visual before typography;
+- run QA, revise, and re-check before completion.
 
-## 目录结构
+## Five Reference Asset Types
 
-项目包含 .agents/skills/ecommerce-hero-visual/，其中有主 Skill 文件、NORI 测试案例、测试结果记录和四份 references。
+| Type | ID prefix | Allowed influence | Important restriction |
+|---|---|---|---|
+| Product Reference Image | PR | Visible product identity, product layer, fidelity QA | Required for final fidelity generation; does not prove hidden details |
+| Product Detail Reference | PD | Specific visible controls, ports, textures, markings, or alternate views | Does not replace a full-product PR asset |
+| Brand Asset | BA | Official logo, wordmark, color, font, and brand rules | Prefer direct use; do not model-redraw official logos |
+| Style Reference | SR | Approved mood, lighting, background, color atmosphere, and texture | Cannot supply product identity, facts, logos, accessories, claims, or packaging |
+| Layout Reference | LR | Composition, information density, visual hierarchy, text/product balance, and negative space | Cannot affect product identity or facts and must not be copied as a design |
 
-## 使用方法
+Every supplied asset receives a stable Reference ID, authority, approved use, prohibited use, visible coverage, and limitations.
 
-在 Codex 中打开本项目根目录，然后要求使用 $ecommerce-hero-visual，读取：
+## Production Modes
 
-.agents/skills/ecommerce-hero-visual/examples/NORI-test-case.md
+### Reference-backed Fidelity Mode
 
-并输出：
+Use when at least one approved usable Product Reference Image supports the intended view. The full production and Side-by-side Reference QA workflow may proceed.
 
-1. Structured Brief
-2. Missing Information
-3. Communication Hierarchy
-4. Three Visual Directions
-5. Recommended Direction
-6. Layout Blueprint
-7. Text-free Generation Prompt
-8. Chinese Copy Plan
-9. English Copy Plan
-10. QA Checklist
+### Planning-only Mode
 
-同时明确：Do not invent product facts.
+Use when no usable Product Reference Image is available. The skill may still produce a brief, communication strategy, directions, layout, prompt planning, and copy planning, but final product-fidelity generation remains Blocked.
 
-也可以把同样的工作流用于新的商品 Brief。需要最终商品视觉时，应同时提供已批准的商品参考图、官方 Logo 和相关品牌规范。
+A real product must never be reconstructed from text alone.
 
-## 测试案例
+## Preferred Production Method
 
-测试案例位于：
+V2 prioritizes:
 
-.agents/skills/ecommerce-hero-visual/examples/NORI-test-case.md
+1. approved product cutout or original product pixels;
+2. a separately generated text-free background;
+3. direct product composition;
+4. product-fidelity review;
+5. confirmed typography and direct official Brand Asset placement;
+6. final Side-by-side Reference QA.
 
-预期测试结果记录位于：
+Reference-guided generation is allowed only when appropriate, supported by the tool and source assets, and directly verifiable against the Product Fidelity Lock.
 
-.agents/skills/ecommerce-hero-visual/examples/NORI-test-result.md
+## Repository Structure
 
-NORI 案例故意不包含商品参考图。正确行为是完成策略、文案和预检 QA，同时将最终商品图生成与商品真实性 QA 标记为 Blocked，而不是编造商品外观。
+~~~text
+.
+├── input-manifest.example.yaml
+├── inputs/
+│   ├── README.md
+│   ├── product-images/
+│   ├── brand-assets/
+│   ├── style-references/
+│   └── layout-references/
+└── .agents/
+    └── skills/
+        └── ecommerce-hero-visual/
+            ├── SKILL.md
+            ├── examples/
+            │   ├── NORI-test-case.md
+            │   ├── NORI-test-result.md
+            │   └── reference-backed-test-spec.md
+            └── references/
+                ├── input-schema.md
+                ├── quality-checklist.md
+                ├── reference-image-workflow.md
+                ├── visual-strategy.md
+                └── workflow-rules.md
+~~~
 
-## 验证
+## How to provide images
 
-Skill 的 YAML front matter 和目录结构可使用 Codex Skill Creator 的 quick_validate.py 检查。当前 Skill 已通过该验证。
+The simplest repository-based workflow is:
 
-本仓库只包含 Skill 指令、参考文档和测试材料，不包含 API key、密码、商品私有素材或生成后的临时文件。
+1. place real product images in inputs/product-images/;
+2. place official Logo and other Brand Assets in inputs/brand-assets/;
+3. place optional Style References in inputs/style-references/;
+4. place optional Layout References in inputs/layout-references/;
+5. edit input-manifest.example.yaml or copy it to input-manifest.yaml and update the actual paths and Reference IDs;
+6. invoke $ecommerce-hero-visual in Codex.
+
+Primary Product References and Product Detail References both use inputs/product-images/. Not every Reference type is required. Only at least one valid Product Reference Image is required to enter final Reference-backed Fidelity Generation.
+
+Images may also be attached directly to Codex instead of being stored in the repository. Repository files and directly attached images enter the same Reference Asset Inventory and follow the same authority, permission, Fidelity Lock, and QA rules.
+
+The example manifest is a template only. Do not treat its example paths as supplied evidence unless the corresponding real files exist or are directly attached.
+
+## Use in Codex
+
+Open the project root and invoke ecommerce-hero-visual. Supply or attach the relevant approved reference assets and identify their roles when possible.
+
+Request outputs such as:
+
+1. Structured Brief;
+2. Reference Asset Inventory;
+3. Production Mode;
+4. Missing Information;
+5. Product Reference Analysis;
+6. Product Fidelity Lock;
+7. Communication Hierarchy;
+8. Visual Directions with Reference Feasibility and Fidelity Risk;
+9. Recommended Direction;
+10. Reference Image Usage Plan;
+11. Layout Blueprint;
+12. Reference-based Text-free Generation Plan;
+13. Confirmed Copy Plan;
+14. Side-by-side Reference QA;
+15. Iteration Record and final status.
+
+## Tests
+
+### Negative test: no Product Reference Image
+
+Use .agents/skills/ecommerce-hero-visual/examples/NORI-test-case.md.
+
+The correct behavior is Planning-only Mode. The skill must not invent the product appearance or claim final fidelity generation has passed.
+
+The expected planning result is documented in .agents/skills/ecommerce-hero-visual/examples/NORI-test-result.md.
+
+### Positive test: approved references present
+
+Use .agents/skills/ecommerce-hero-visual/examples/reference-backed-test-spec.md as the fixture specification.
+
+This repository intentionally does not include a fake product image. A positive test becomes runnable only after legitimate, approved Product Reference, Product Detail, and applicable Brand Assets are supplied.
+
+The specification also defines Style Reference contamination, Layout Reference contamination, hidden-detail, brand-asset, and reference-conflict tests.
+
+## Validation
+
+The project does not include a custom validation script. When the Codex Skill Creator validator is available, run its quick_validate.py against .agents/skills/ecommerce-hero-visual/.
+
+Also verify:
+
+- all local Markdown links resolve;
+- every Reference ID is traceable;
+- NORI remains blocked from final generation;
+- a future positive fixture uses real approved assets;
+- SR and LR assets cannot contaminate product identity or facts;
+- final completion requires Side-by-side Reference QA with no unresolved Blocking or High issue.
+
+## Repository Safety
+
+Do not commit private product imagery, credentials, API keys, customer data, or assets without permission to publish them. Keep test product imagery external unless it is explicitly licensed or approved for this public course repository.
