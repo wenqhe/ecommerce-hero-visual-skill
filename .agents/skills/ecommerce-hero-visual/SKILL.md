@@ -36,6 +36,14 @@ Read [references/input-schema.md](references/input-schema.md). Assign stable IDs
 - SR for Style Reference;
 - LR for Layout Reference.
 
+Before treating any declared or supplied reference as evidence, verify that it is actually available in the current run and record exactly one status in the Reference Asset Inventory:
+
+- **Present:** the asset exists and can be inspected;
+- **Missing:** the manifest or task declares it, but the referenced file cannot be found;
+- **Unavailable:** the asset is known or referenced, but cannot currently be accessed or inspected.
+
+Only Present assets may be used as reference evidence. A manifest declaration alone does not prove that an asset exists. If no usable Present Product Reference Image supports the intended view, a Missing or Unavailable required PR keeps the workflow in Planning-only Mode. Missing or Unavailable optional PD, BA, SR, or LR assets are not evidence and do not automatically block stages that do not require them.
+
 Read [references/reference-image-workflow.md](references/reference-image-workflow.md) whenever image or brand references are supplied. Separate confirmed facts, reference evidence, strategic proposals, missing blockers, and optional enhancements.
 
 ### 2. Select the Production Mode
@@ -62,9 +70,24 @@ Before generation, map each Reference ID to the stages where it will be used. St
 
 Style Reference may transfer only approved style properties. Layout Reference may transfer only layout principles and must not be copied. Official logos and other Brand Assets should be placed directly rather than regenerated.
 
-### 6. Plan and Produce the Text-free Visual
+### 6. Complete the Pre-generation Handoff
 
-Create a layout blueprint for the product, negative space, headline, supporting copy, promotion, CTA, and Brand Assets.
+Finalize the Layout Blueprint before creating the handoff. It should identify product, copy, and negative-space zones plus protected product areas without introducing fixed product-specific dimensions.
+
+Then create a concise Pre-generation Handoff. It must summarize the Reference Asset Inventory availability statuses, evidence conflicts and unresolved Unknowns, Production Mode, Product Fidelity Lock statuses, selected direction, Reference Feasibility, Fidelity Risk, Reference Image Usage Plan, Layout Blueprint, and outstanding blockers.
+
+Set the final readiness status to exactly one of:
+
+- `READY FOR TEXT-FREE PRODUCTION`;
+- `BLOCKED`.
+
+Use `READY FOR TEXT-FREE PRODUCTION` only when the selected mode supports the requested stage, required Present evidence exists, the intended product view is supported, no unresolved conflict or blocker prevents faithful production, and the selected direction can preserve the Product Fidelity Lock. Use `BLOCKED` when required evidence is missing, unavailable, conflicting, or insufficient. Planning-only Mode may continue planning, but it cannot receive READY for a real product-fidelity visual without a usable Present PR.
+
+This handoff is a readiness checkpoint, not a duplicate of the upstream analysis tables. Do not begin text-free production until it is complete and READY.
+
+### 7. Plan and Produce the Text-free Visual
+
+Use the approved Layout Blueprint for the product, negative space, headline, supporting copy, promotion, CTA, and Brand Assets.
 
 Use this production priority:
 
@@ -74,11 +97,11 @@ Use this production priority:
 
 The text-free output must preserve the Product Fidelity Lock, leave usable type space, and exclude marketing text, fake seals, invented logos, unsupported parts, and unrelated accessories.
 
-### 7. Add Copy and Brand Assets
+### 8. Add Copy and Brand Assets
 
 Add only confirmed copy. Use supplied official Brand Assets directly, especially logos and product marks. Do not redraw them with a generation model. Create separate language variants by default when combined bilingual typography would reduce clarity.
 
-### 8. Run Side-by-side Reference QA and Iterate
+### 9. Run Side-by-side Reference QA and Iterate
 
 Use [references/quality-checklist.md](references/quality-checklist.md). Compare the output directly against every applicable PR, PD, and BA reference. Record Pass, Revise, Blocked, or Not Visible for each attribute, assign severity, fix every Blocking or High issue, and re-check the affected criteria.
 
@@ -102,6 +125,7 @@ Return the items relevant to the request:
 - communication hierarchy;
 - visual direction options with Reference Feasibility and Fidelity Risk;
 - Reference Image Usage Plan;
+- Pre-generation Handoff with final readiness status;
 - layout blueprint;
 - reference-based text-free generation or composition prompt;
 - exact confirmed copy plan;

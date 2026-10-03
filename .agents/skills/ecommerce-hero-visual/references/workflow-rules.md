@@ -6,6 +6,8 @@ Use these gates in order. Do not skip a failed gate by filling missing evidence 
 
 Inventory every supplied Product Reference Image, Product Detail Reference, Brand Asset, Style Reference, and Layout Reference. Assign stable Reference IDs and record authority, visible coverage, approved use, prohibited use, and limitations.
 
+Before using a declared or supplied reference as evidence, verify its availability and record exactly one status: `Present` (exists and can be inspected in the current run), `Missing` (declared but the referenced file cannot be found), or `Unavailable` (known or referenced but cannot currently be accessed or inspected). Only `Present` assets are usable evidence; a manifest declaration alone does not prove existence. Reference-backed Fidelity Mode requires at least one usable `Present` PR supporting the intended view. Missing or Unavailable optional PD, BA, SR, or LR assets are not evidence and do not automatically block stages that do not require them.
+
 Style Reference and Layout Reference are never product-fact sources. Layout Reference may affect only composition, information density, visual hierarchy, text/product balance, and negative-space planning. Do not copy the reference design.
 
 ## Gate 2 — Production Mode
@@ -41,7 +43,15 @@ Map every supplied Reference ID to its intended stage and method. State what may
 
 Mark unused references explicitly. Do not allow SR or LR assets to override confirmed facts, PR, PD, or BA evidence.
 
-## Gate 6 — Text-free Production
+## Gate 6 — Pre-generation Handoff
+
+After the Layout Blueprint is complete, create a concise Pre-generation Handoff summarizing the Reference Asset Inventory availability statuses, evidence conflicts and Unknowns, Production Mode, Product Fidelity Lock statuses, selected direction, Reference Feasibility, Fidelity Risk, Reference Image Usage Plan, Layout Blueprint, and outstanding blockers.
+
+The handoff must end with exactly one status: `READY FOR TEXT-FREE PRODUCTION` or `BLOCKED`. READY requires a supported production mode, required Present evidence, a supported intended view, no unresolved conflict or blocker, and a direction that preserves the Product Fidelity Lock. Use BLOCKED when required evidence is missing, unavailable, conflicting, or insufficient. Planning-only Mode cannot receive READY for a real product-fidelity visual without a usable Present PR. Keep the handoff as a concise readiness checkpoint rather than duplicating upstream analysis.
+
+Do not begin text-free production until the handoff is complete and READY.
+
+## Gate 7 — Text-free Production
 
 Use this priority:
 
@@ -53,13 +63,13 @@ Generate the background without text, logos, badges, certifications, or a recons
 
 Check product fidelity, crop, scale, occlusion, integration, and negative space before typography.
 
-## Gate 7 — Copy and Brand Composition
+## Gate 8 — Copy and Brand Composition
 
 Add only confirmed copy. Use official Brand Assets directly, especially logos and wordmarks. Do not ask a generation model to redraw an official brand asset.
 
 Keep the product as the primary visual focus. Use readable hierarchy and sufficient contrast. Create separate language versions by default when combined bilingual typography would reduce clarity.
 
-## Gate 8 — Side-by-side Reference QA and Stop Condition
+## Gate 9 — Side-by-side Reference QA and Stop Condition
 
 Compare the output directly against every applicable PR, PD, and BA asset. Use Pass, Revise, Blocked, or Not Visible and assign a severity to every mismatch.
 

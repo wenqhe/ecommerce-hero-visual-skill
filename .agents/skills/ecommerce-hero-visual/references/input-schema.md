@@ -10,10 +10,13 @@ Assign every supplied reference a stable ID and record:
 - asset type;
 - source and authority;
 - file or attachment identity;
+- availability status: `Present`, `Missing`, or `Unavailable`;
 - visible view or coverage;
 - approved use;
 - prohibited use;
 - quality limitations, occlusions, or uncertainty.
+
+Verify availability before treating a declared or supplied reference as evidence. `Present` means the asset exists and can be inspected in the current run. `Missing` means the manifest or task declares it but the referenced file cannot be found. `Unavailable` means the asset is known or referenced but cannot currently be accessed or inspected. Only `Present` assets are usable reference evidence; a manifest declaration alone is not proof of existence.
 
 Read [reference-image-workflow.md](reference-image-workflow.md) for the detailed templates and usage rules.
 
@@ -23,7 +26,7 @@ Read [reference-image-workflow.md](reference-image-workflow.md) for the detailed
 
 The authoritative full-product visual source for silhouette, proportions, visible color, finish, material appearance, major structures, markings, and product identity.
 
-At least one usable PR asset is required for Reference-backed Fidelity Mode.
+At least one usable `Present` PR asset is required for Reference-backed Fidelity Mode. If the required PR coverage is `Missing` or `Unavailable`, remain in Planning-only Mode.
 
 ### Product Detail Reference — PD
 

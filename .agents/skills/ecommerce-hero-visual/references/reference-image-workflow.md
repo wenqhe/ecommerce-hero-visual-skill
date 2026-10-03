@@ -16,11 +16,11 @@ Do not refer to an asset only as the first image or the logo image once an ID ha
 
 ## 2. Reference Asset Inventory Template
 
-| Reference ID | Type | Source and authority | Visible coverage | Approved use | Prohibited use | Limitations |
-|---|---|---|---|---|---|---|
-| PR-01 | Product Reference | User-approved | Record actual view | Analysis, product layer, QA | Style invention | Record occlusion or quality issues |
+| Reference ID | Type | Source and authority | Availability | Visible coverage | Approved use | Prohibited use | Limitations |
+|---|---|---|---|---|---|---|---|
+| PR-01 | Product Reference | User-approved | Present / Missing / Unavailable | Record actual view | Analysis, product layer, QA | Style invention | Record occlusion or quality issues |
 
-Every supplied asset must have an inventory row before generation begins.
+Every declared or supplied asset must have an inventory row before generation begins. Check its availability first and use only `Present` assets as evidence. A manifest declaration alone does not prove that an asset exists.
 
 ## 3. Asset Permission Boundaries
 
@@ -115,7 +115,23 @@ Create a plan before generation:
 
 Every supplied reference must have a defined use or be explicitly marked unused.
 
-## 9. Text-free Production Method Priority
+## 9. Pre-generation Handoff
+
+After the Reference Image Usage Plan and Layout Blueprint are complete, create a concise readiness checkpoint containing:
+
+- Reference Asset Inventory availability status;
+- evidence conflicts and unresolved Unknowns;
+- Production Mode;
+- Product Fidelity Lock summary using Locked, Conditional, Unknown, or Conflict;
+- selected visual direction, Reference Feasibility, and Fidelity Risk;
+- Reference Image Usage Plan summary, including forbidden transfers;
+- Layout Blueprint summary covering product, copy, negative-space, and protected product zones;
+- outstanding blockers;
+- final status: `READY FOR TEXT-FREE PRODUCTION` or `BLOCKED`.
+
+Use READY only when the selected mode, required Present evidence, intended view, conflict state, and direction support faithful production. Use BLOCKED when required evidence is missing, unavailable, conflicting, or insufficient. Planning-only Mode cannot receive READY for a real product-fidelity visual without a usable Present PR. Keep this checkpoint concise and do not duplicate the complete upstream analysis.
+
+## 10. Text-free Production Method Priority
 
 ### Preferred method: original product pixels plus generated background
 
@@ -142,7 +158,7 @@ After generation, run strict Side-by-side Reference QA. Regenerate or switch to 
 
 Do not reconstruct a real product using only its name, category, written description, or marketing claims. Do not generate unseen product angles or hidden details.
 
-## 10. Brand, Style, and Layout Isolation
+## 11. Brand, Style, and Layout Isolation
 
 - BA controls official brand identity and should be directly placed where possible.
 - SR controls approved style properties only.
@@ -151,7 +167,7 @@ Do not reconstruct a real product using only its name, category, written descrip
 - If an SR or LR contains another product, logo, accessory, price, or copy, treat those elements as excluded content.
 - Never ask for a close copy of an SR or LR design.
 
-## 11. Handoff to QA
+## 12. Handoff to QA
 
 Provide QA with:
 
