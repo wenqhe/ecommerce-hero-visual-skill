@@ -66,6 +66,28 @@ For every mismatch, record the Reference IDs, output observation, status, severi
 - Do props and visual effects remain relevant and non-misleading?
 - Does the output comply with the canvas and ecommerce surface requirements?
 
+## Rendered Commercial Layout Recheck
+
+After actual product composition and typography, re-check only commercial
+properties that can change during rendering. Use exactly `Calibrated`,
+`Revise`, or `Not Applicable` for this subsection. This rendered recheck is
+authoritative for the final image and does not replace the pre-generation
+Commercial Layout Calibration or Side-by-side Reference QA.
+
+- product scale and visual prominence;
+- typography hierarchy;
+- product / copy balance;
+- empty-space efficiency;
+- grounding;
+- information grouping;
+- mobile-thumbnail clarity;
+- visual reading order.
+
+Do not treat a pre-generation blueprint status as proof that the rendered
+image has passed. Recheck contrast, scale, occlusion, and grounding on the
+actual composition. Do not duplicate the complete pre-generation calibration
+record here.
+
 ## Severity
 
 - Blocking: product identity changed, a product structure or fact was invented, the wrong product or logo appears, or no valid PR supports the output;

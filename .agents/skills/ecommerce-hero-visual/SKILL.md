@@ -70,9 +70,25 @@ Before generation, map each Reference ID to the stages where it will be used. St
 
 Style Reference may transfer only approved style properties. Layout Reference may transfer only layout principles and must not be copied. Official logos and other Brand Assets should be placed directly rather than regenerated.
 
-### 6. Complete the Pre-generation Handoff
+### 6. Draft the Layout Blueprint
 
-Finalize the Layout Blueprint before creating the handoff. It should identify product, copy, and negative-space zones plus protected product areas without introducing fixed product-specific dimensions.
+Create a Layout Blueprint for the product, copy, negative-space, promotion,
+CTA, and Brand Asset zones. Identify protected product areas without
+introducing fixed product-specific dimensions.
+
+### 7. Run Commercial Layout Calibration
+
+Read [references/commercial-layout-calibration.md](references/commercial-layout-calibration.md).
+Evaluate the draft Layout Blueprint before generation using exactly
+`Calibrated`, `Revise`, or `Not Applicable` for each applicable diagnostic.
+
+If an applicable CORE diagnostic is `Revise`, identify the commercial layout
+problem, revise the Layout Blueprint, and rerun the affected checks. Do not
+continue to the Pre-generation Handoff with unresolved applicable CORE
+`Revise` items. `Not Applicable` does not block readiness. Commercial
+calibration cannot override the Product Fidelity Lock.
+
+### 8. Complete the Pre-generation Handoff
 
 Then create a concise Pre-generation Handoff. It must summarize the Reference Asset Inventory availability statuses, evidence conflicts and unresolved Unknowns, Production Mode, Product Fidelity Lock statuses, selected direction, Reference Feasibility, Fidelity Risk, Reference Image Usage Plan, Layout Blueprint, and outstanding blockers.
 
@@ -81,11 +97,11 @@ Set the final readiness status to exactly one of:
 - `READY FOR TEXT-FREE PRODUCTION`;
 - `BLOCKED`.
 
-Use `READY FOR TEXT-FREE PRODUCTION` only when the selected mode supports the requested stage, required Present evidence exists, the intended product view is supported, no unresolved conflict or blocker prevents faithful production, and the selected direction can preserve the Product Fidelity Lock. Use `BLOCKED` when required evidence is missing, unavailable, conflicting, or insufficient. Planning-only Mode may continue planning, but it cannot receive READY for a real product-fidelity visual without a usable Present PR.
+Use `READY FOR TEXT-FREE PRODUCTION` only when the selected mode supports the requested stage, required Present evidence exists, the intended product view is supported, no unresolved conflict or blocker prevents faithful production, the selected direction can preserve the Product Fidelity Lock, and no applicable CORE Commercial Layout Calibration diagnostic remains `Revise`. Use `BLOCKED` when required evidence is missing, unavailable, conflicting, insufficient, or an applicable CORE calibration issue remains unresolved. Planning-only Mode may continue planning, but it cannot receive READY for a real product-fidelity visual without a usable Present PR.
 
 This handoff is a readiness checkpoint, not a duplicate of the upstream analysis tables. Do not begin text-free production until it is complete and READY.
 
-### 7. Plan and Produce the Text-free Visual
+### 9. Plan and Produce the Text-free Visual
 
 Use the approved Layout Blueprint for the product, negative space, headline, supporting copy, promotion, CTA, and Brand Assets.
 
@@ -97,13 +113,13 @@ Use this production priority:
 
 The text-free output must preserve the Product Fidelity Lock, leave usable type space, and exclude marketing text, fake seals, invented logos, unsupported parts, and unrelated accessories.
 
-### 8. Add Copy and Brand Assets
+### 10. Add Copy and Brand Assets
 
 Add only confirmed copy. Use supplied official Brand Assets directly, especially logos and product marks. Do not redraw them with a generation model. Create separate language variants by default when combined bilingual typography would reduce clarity.
 
-### 9. Run Side-by-side Reference QA and Iterate
+### 11. Run Side-by-side Reference QA and Iterate
 
-Use [references/quality-checklist.md](references/quality-checklist.md). Compare the output directly against every applicable PR, PD, and BA reference. Record Pass, Revise, Blocked, or Not Visible for each attribute, assign severity, fix every Blocking or High issue, and re-check the affected criteria.
+Use [references/quality-checklist.md](references/quality-checklist.md). Compare the output directly against every applicable PR, PD, and BA reference. Record Pass, Revise, Blocked, or Not Visible for each attribute, assign severity, fix every Blocking or High issue, and re-check the affected criteria. Also complete the concise rendered commercial-layout recheck described in the checklist; it does not replace Side-by-side Reference QA or retroactively validate the pre-generation blueprint.
 
 Completion requires either:
 
@@ -125,8 +141,9 @@ Return the items relevant to the request:
 - communication hierarchy;
 - visual direction options with Reference Feasibility and Fidelity Risk;
 - Reference Image Usage Plan;
+- Draft Layout Blueprint;
+- Commercial Layout Calibration record;
 - Pre-generation Handoff with final readiness status;
-- layout blueprint;
 - reference-based text-free generation or composition prompt;
 - exact confirmed copy plan;
 - Side-by-side Reference QA, revisions, and final status;

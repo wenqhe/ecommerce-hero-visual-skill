@@ -43,15 +43,43 @@ Map every supplied Reference ID to its intended stage and method. State what may
 
 Mark unused references explicitly. Do not allow SR or LR assets to override confirmed facts, PR, PD, or BA evidence.
 
-## Gate 6 — Pre-generation Handoff
+## Gate 6 — Draft Layout Blueprint
 
-After the Layout Blueprint is complete, create a concise Pre-generation Handoff summarizing the Reference Asset Inventory availability statuses, evidence conflicts and Unknowns, Production Mode, Product Fidelity Lock statuses, selected direction, Reference Feasibility, Fidelity Risk, Reference Image Usage Plan, Layout Blueprint, and outstanding blockers.
+After the Reference Image Usage Plan, draft the Layout Blueprint for product,
+copy, negative-space, promotion, CTA, and Brand Asset zones. Identify
+protected product areas without introducing fixed product-specific dimensions.
 
-The handoff must end with exactly one status: `READY FOR TEXT-FREE PRODUCTION` or `BLOCKED`. READY requires a supported production mode, required Present evidence, a supported intended view, no unresolved conflict or blocker, and a direction that preserves the Product Fidelity Lock. Use BLOCKED when required evidence is missing, unavailable, conflicting, or insufficient. Planning-only Mode cannot receive READY for a real product-fidelity visual without a usable Present PR. Keep the handoff as a concise readiness checkpoint rather than duplicating upstream analysis.
+## Gate 7 — Commercial Layout Calibration
+
+Run the diagnostic checks in
+[commercial-layout-calibration.md](commercial-layout-calibration.md) against
+the draft Layout Blueprint. This gate occurs before the Pre-generation
+Handoff and does not require generated pixels.
+
+Use exactly `Calibrated`, `Revise`, or `Not Applicable`. If an applicable
+CORE diagnostic is `Revise`, identify the layout problem, revise the Layout
+Blueprint, and rerun the affected checks. Do not proceed with unresolved
+applicable CORE `Revise` items. `Not Applicable` does not block readiness.
+
+Commercial calibration cannot override the Product Fidelity Lock. The
+research benchmark set is diagnostic context only; runtime operation must
+not require local benchmark assets, load them automatically, or copy their
+distinctive compositions or content.
+
+## Gate 8 — Pre-generation Handoff
+
+After Commercial Layout Calibration is complete, create a concise
+Pre-generation Handoff summarizing the Reference Asset Inventory availability
+statuses, evidence conflicts and Unknowns, Production Mode, Product Fidelity
+Lock statuses, selected direction, Reference Feasibility, Fidelity Risk,
+Reference Image Usage Plan, Layout Blueprint, calibration outcome, and
+outstanding blockers.
+
+The handoff must end with exactly one status: `READY FOR TEXT-FREE PRODUCTION` or `BLOCKED`. READY requires a supported production mode, required Present evidence, a supported intended view, no unresolved conflict or blocker, a direction that preserves the Product Fidelity Lock, and no unresolved applicable CORE Commercial Layout Calibration `Revise`. Use BLOCKED when required evidence is missing, unavailable, conflicting, insufficient, or an applicable CORE calibration issue remains unresolved. Planning-only Mode cannot receive READY for a real product-fidelity visual without a usable Present PR. Keep the handoff as a concise readiness checkpoint rather than duplicating upstream analysis.
 
 Do not begin text-free production until the handoff is complete and READY.
 
-## Gate 7 — Text-free Production
+## Gate 9 — Text-free Production
 
 Use this priority:
 
@@ -63,13 +91,13 @@ Generate the background without text, logos, badges, certifications, or a recons
 
 Check product fidelity, crop, scale, occlusion, integration, and negative space before typography.
 
-## Gate 8 — Copy and Brand Composition
+## Gate 10 — Copy and Brand Composition
 
 Add only confirmed copy. Use official Brand Assets directly, especially logos and wordmarks. Do not ask a generation model to redraw an official brand asset.
 
 Keep the product as the primary visual focus. Use readable hierarchy and sufficient contrast. Create separate language versions by default when combined bilingual typography would reduce clarity.
 
-## Gate 9 — Side-by-side Reference QA and Stop Condition
+## Gate 11 — Side-by-side Reference QA and Stop Condition
 
 Compare the output directly against every applicable PR, PD, and BA asset. Use Pass, Revise, Blocked, or Not Visible and assign a severity to every mismatch.
 
