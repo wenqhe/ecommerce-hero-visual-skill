@@ -59,9 +59,23 @@ Analyze each Product Reference Image and Product Detail Reference. Record visibl
 
 Create a Product Fidelity Lock that traces every locked or unknown attribute to specific Reference IDs. Do not infer unseen product surfaces or details. When approved references conflict, stop using the disputed attribute until an authoritative source is identified.
 
+Create and retain a concise Product Lighting and Contact Profile from the
+approved PR / PD evidence before selecting a scene. Record Reference IDs,
+supported camera / view orientation, visible lighting direction, lighting
+softness / hardness, approximate color-temperature character, contrast
+character, visible product-bottom geometry, intended support / contact region,
+suspension intent, and Unknown / unverified properties. Record only visibly
+supported evidence. Do not infer hidden contact surfaces, support hardware, or
+unseen lighting behavior.
+
 ### 4. Build the Communication and Visual Strategy
 
 Define the audience, intended action, three-second takeaway, primary concern, emotional tone, and confirmed communication hierarchy.
+
+Before selecting a direction, check whether its proposed scene, support
+relationship, and lighting are compatible with the Product Lighting and
+Contact Profile. Resolve an obvious incompatibility by revising the scene or
+direction; do not force the protected product layer to fit it.
 
 Use [references/visual-strategy.md](references/visual-strategy.md) when selecting or comparing directions. Each direction must include Reference Feasibility, required product view, occlusion risk, and Fidelity Risk. Reject or revise directions that require an unavailable or unverified product view.
 
@@ -84,6 +98,16 @@ anchor / price / CTA, intentional separation, or intentional atmosphere. Add a
 non-final `Thumbnail risk estimate` covering planned product prominence,
 primary-message prominence, commercial-anchor prominence, and likely
 information-density risk. It does not replace rendered thumbnail validation.
+Also record a Support Plane and Contact Plan: physical support plane or
+support relationship, intended product contact point or region, resting or
+intentionally suspended state, support-plane perspective relationship,
+expected contact-shadow relationship, and protected product areas. The support
+may be a tabletop, shelf, pedestal, fabric, wall-mounted context, liquid or
+another physically plausible support when compatible with the task and
+references; it does not have to be a floor. If the product is intended to
+rest and its rendered base fails to meet the support, `Grounding = Revise`.
+Intentional suspension must be explicit and must not invent wires, stands,
+mounts, or hidden support hardware.
 Identify protected product areas without introducing fixed product-specific
 dimensions. If the recorded Draft Layout Blueprint is missing, Commercial
 Layout Calibration cannot run and pre-generation status is `BLOCKED`.
@@ -107,6 +131,15 @@ anchor when applicable, including a check that bilingual density does not
 shrink the type system or product below a commercially useful level. The
 Blueprint must explain the function of each major region; materially
 non-functional empty space is `Revise`.
+
+For the existing `Grounding` CORE diagnostic, use the Product Lighting and
+Contact Profile and Support Plane and Contact Plan to assess contact integrity
+and scene compatibility. Before `Grounding = Calibrated`, record evidence for
+the support relationship or explicit suspension, plausible perspective and
+local scale, compatible light direction / softness / contrast / color
+temperature, and a credible plan to avoid a pasted or sticker effect. A
+material incompatibility in either contact integrity or scene compatibility is
+`Grounding = Revise`.
 
 `Mobile-thumbnail clarity` is rendered-only and is not assigned a calibration
 status in this pre-generation record. Before generation, record only the
@@ -153,6 +186,15 @@ Use this production priority:
 
 The text-free output must preserve the Product Fidelity Lock, leave usable type space, and exclude marketing text, fake seals, invented logos, unsupported parts, and unrelated accessories.
 
+Before typography, verify scene integration against the Product Lighting and
+Contact Profile and Support Plane and Contact Plan. Prefer revising the
+background or support plane, then separate contact-shadow / cast-shadow layers,
+then placement, scale, or non-destructive edge integration, and only then
+restrained tonal integration when product fidelity remains directly verifiable.
+Do not redesign product geometry, rotate or mirror it without support, replace
+materials, change logos, recolor it uncontrollably, or invent supports to solve
+scene integration.
+
 ### 10. Add Copy and Brand Assets
 
 Add only confirmed copy. Confirmed copy may be grouped, reduced in secondary
@@ -191,6 +233,7 @@ Return the items relevant to the request:
 - missing information and generation blockers;
 - Product Reference Analysis;
 - Product Fidelity Lock with Reference IDs;
+- Product Lighting and Contact Profile;
 - communication hierarchy;
 - visual direction options with Reference Feasibility and Fidelity Risk;
 - Reference Image Usage Plan;

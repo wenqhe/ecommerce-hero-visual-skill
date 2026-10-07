@@ -24,9 +24,23 @@ Preserve supported silhouette, proportions, color, finish, material appearance, 
 
 If approved references conflict, mark the affected attribute Conflict and stop using it until an authoritative source is identified.
 
+After the Product Fidelity Lock, retain a Product Lighting and Contact Profile
+from approved PR / PD evidence before selecting a scene. Record Reference IDs,
+supported view orientation, visible lighting direction, lighting softness /
+hardness, approximate color-temperature character, contrast character, visible
+product-bottom geometry, intended support / contact region, suspension intent,
+and Unknown / unverified properties. Record only visibly supported evidence;
+do not infer hidden contact surfaces, support hardware, or unseen lighting
+behavior.
+
 ## Gate 4 — Communication Accuracy and Strategy Feasibility
 
 Complete the brief, evidence classification, communication hierarchy, and visual direction before generation. Confirmed copy controls factual truth but does not require equal visual weight or a separate visual zone. Grouping or reducing secondary prominence is allowed when meaning is preserved. Do not add unconfirmed substitute copy merely to improve layout.
+
+Visual Strategy must check whether a proposed scene, support relationship, and
+lighting are compatible with the Product Lighting and Contact Profile before a
+direction is selected. Resolve obvious incompatibility by revising the scene
+or direction, not by forcing the protected product layer to fit.
 
 Marketing expression may improve clarity or tone but must not strengthen, broaden, or certify an underlying fact. For example, a confirmed 12-hour claim may be restated with the same duration, but not as all-day performance, constant performance, or a certification.
 
@@ -57,6 +71,12 @@ intentional atmosphere. Record a non-final `Thumbnail risk estimate` for
 planned product prominence, primary-message prominence, commercial-anchor
 prominence, and likely information-density risk. It does not replace a
 rendered thumbnail check.
+Record a Support Plane and Contact Plan covering the physical support plane or
+support relationship, intended contact point or region, resting or intentionally
+suspended state, support-plane perspective relationship, expected contact-shadow
+relationship, and protected product areas. The support may be a tabletop,
+shelf, pedestal, fabric, wall-mounted context, liquid/contact environment, or
+another physically plausible support; it does not have to be a floor.
 Identify protected product areas without introducing fixed product-specific
 dimensions. If the Blueprint is missing, Commercial Layout Calibration cannot
 run and `PRE-GENERATION STATUS = BLOCKED`.
@@ -86,6 +106,13 @@ pre-generation Calibration status; use the Blueprint `Thumbnail risk estimate`
 before generation. Do not proceed with unresolved
 applicable pre-generation CORE `Revise` items. `Not Applicable` does not block
 readiness.
+
+For the existing `Grounding` CORE diagnostic, use the Product Lighting and
+Contact Profile and Support Plane and Contact Plan to assess contact integrity
+and scene compatibility. Before `Grounding = Calibrated`, record compatible
+lighting and support evidence, plausible perspective and local scale, and a
+credible plan to avoid a pasted or sticker effect. A material incompatibility
+in either evidence category is `Grounding = Revise`.
 
 Commercial calibration cannot override the Product Fidelity Lock. The
 research benchmark set is diagnostic context only; runtime operation must
@@ -118,6 +145,17 @@ Generate the background without text, logos, badges, certifications, or a recons
 
 Check product fidelity, crop, scale, occlusion, integration, and negative space before typography.
 
+When Grounding is `Revise`, prefer corrections in this order: revise or
+regenerate the background / support plane; revise separate contact-shadow /
+cast-shadow layers; revise placement, scale, or non-destructive edge
+integration; then use restrained tonal integration only when product fidelity
+remains directly verifiable. Do not redesign product geometry, use unsupported
+rotation or mirroring, replace materials, change logos, recolor
+uncontrollably, or invent supports to solve scene integration. Product
+Fidelity Lock remains authoritative. Intentionally suspended products are not
+forced onto a support plane, but suspension must be explicit and physically
+coherent without invented hardware.
+
 ## Gate 10 — Copy and Brand Composition
 
 Add only confirmed copy. Group related confirmed copy or reduce secondary
@@ -146,7 +184,12 @@ consistent reduced-size preview. Reuse the criterion-specific evidence rules
 in `commercial-layout-calibration.md` for rendered product-scale
 counterfactuals, functional empty-space regions, materially distinct
 typography hierarchy, and insufficient generic evidence. Rendered evidence is
-authoritative when it contradicts the Blueprint. If any applicable rendered CORE item is `Revise`,
+authoritative when it contradicts the Blueprint. For rendered Grounding,
+verify support contact, contact-shadow origin, shadow softness and light
+compatibility when applicable, support-plane perspective, local scene scale,
+edge integration, and perceived physical weight. A visible support gap,
+detached shadow, material lighting incompatibility, or pasted perspective /
+scale relationship is `Grounding = Revise`. If any applicable rendered CORE item is `Revise`,
 revise the composition, typography, or background, rerender, and repeat the
 check. Without actual thumbnail inspection, final commercial completion is
 forbidden. Keep Product Fidelity QA independent and authoritative.

@@ -108,6 +108,26 @@ material revision is needed or the required action. Generic evidence such as
 “shadow exists” is insufficient for `Calibrated`. Do not duplicate the
 complete pre-generation calibration record here.
 
+For rendered `Grounding`, record Status, Observation, Evidence, and why no
+material revision is needed or the required action. Verify:
+
+- physical meeting of the product and intended support;
+- contact-shadow origin at the actual contact region;
+- darkest local shadow consistency with contact;
+- natural softness increase away from contact;
+- cast-shadow behavior and light compatibility when directional light applies;
+- support-plane perspective and local product / scene scale;
+- edge integration without a sticker or cutout halo;
+- believable perceived physical weight.
+
+A visible support gap, detached shadow, material lighting incompatibility, or
+pasted perspective / scale relationship is `Grounding = Revise`. Generic
+evidence such as “a floor exists”, “the product will have a shadow”, or “the
+product is on the table” is insufficient for `Calibrated`. Do not force an
+intentionally suspended product onto a support plane; require explicit,
+coherent suspension instead, without inventing wires, stands, mounts, or
+hidden support hardware.
+
 If any applicable rendered commercial CORE item is `Revise`:
 
 1. identify the layout problem;
