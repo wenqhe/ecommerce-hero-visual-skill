@@ -51,6 +51,12 @@ zones. It must minimally record the selected archetype, product zone and
 intended prominence, copy zones, primary communication anchor,
 supporting-information grouping, price / CTA relationship when applicable,
 negative-space purpose, grounding intent, and intended visual reading order.
+Classify each major region as product, primary communication, supporting
+information, commercial anchor / price / CTA, intentional separation, or
+intentional atmosphere. Record a non-final `Thumbnail risk estimate` for
+planned product prominence, primary-message prominence, commercial-anchor
+prominence, and likely information-density risk. It does not replace a
+rendered thumbnail check.
 Identify protected product areas without introducing fixed product-specific
 dimensions. If the Blueprint is missing, Commercial Layout Calibration cannot
 run and `PRE-GENERATION STATUS = BLOCKED`.
@@ -63,13 +69,23 @@ the draft Layout Blueprint. This gate occurs before the Pre-generation
 Handoff and does not require generated pixels.
 
 Retain a complete Commercial Layout Calibration Record containing all
-applicable CORE diagnostics and relevant ARCHETYPE-CONDITIONAL diagnostics.
+applicable pre-generation CORE diagnostics and relevant ARCHETYPE-CONDITIONAL diagnostics.
 Use exactly `Calibrated`, `Revise`, or `Not Applicable`. If the record is
 missing, set `PRE-GENERATION STATUS = BLOCKED` and do not begin generation.
-If an applicable CORE diagnostic is `Revise`, identify the layout problem,
+Before any applicable pre-generation CORE item is `Calibrated`, record Status,
+Observation, Evidence, and why no material revision is needed or the required
+action.
+Product scale requires a Largest Effective Product Scale counterfactual;
+empty-space efficiency requires a functional purpose for every major region;
+typography requires explicit primary/supporting/commercial-anchor hierarchy and
+a bilingual-density check. Generic evidence is insufficient. If an applicable
+pre-generation CORE diagnostic is `Revise`, identify the layout problem,
 revise the Layout Blueprint, rerun the affected checks, and record the new
-result. Do not proceed with unresolved applicable CORE `Revise` items.
-`Not Applicable` does not block readiness.
+result. `Mobile-thumbnail clarity` is rendered-only and receives no
+pre-generation Calibration status; use the Blueprint `Thumbnail risk estimate`
+before generation. Do not proceed with unresolved
+applicable pre-generation CORE `Revise` items. `Not Applicable` does not block
+readiness.
 
 Commercial calibration cannot override the Product Fidelity Lock. The
 research benchmark set is diagnostic context only; runtime operation must
@@ -84,9 +100,9 @@ and Commercial Layout Calibration Record. Summarize the Reference Asset
 Inventory availability statuses, evidence conflicts and Unknowns, Production
 Mode, Product Fidelity Lock statuses, selected direction, Reference
 Feasibility, Fidelity Risk, Reference Image Usage Plan, Layout Blueprint,
-calibration outcome, and outstanding blockers.
+Thumbnail risk estimate, calibration outcome, and outstanding blockers.
 
-The handoff must end with exactly one status: `READY FOR TEXT-FREE PRODUCTION` or `BLOCKED`. READY requires a supported production mode, required Present evidence, a supported intended view, no unresolved conflict or blocker, a direction that preserves the Product Fidelity Lock, complete recorded Blueprint and Calibration artifacts, and no unresolved applicable CORE Commercial Layout Calibration `Revise`. If the Handoff is missing, incomplete, not recorded, or not READY, do not begin generation; a generated result is not evidence that READY was reached. Use BLOCKED when required evidence is missing, unavailable, conflicting, insufficient, an artifact is missing, or an applicable CORE calibration issue remains unresolved. Planning-only Mode cannot receive READY for a real product-fidelity visual without a usable Present PR. Keep the handoff as a concise readiness checkpoint rather than duplicating upstream analysis.
+The handoff must end with exactly one status: `READY FOR TEXT-FREE PRODUCTION` or `BLOCKED`. READY requires a supported production mode, required Present evidence, a supported intended view, no unresolved conflict or blocker, a direction that preserves the Product Fidelity Lock, complete recorded Blueprint and Calibration artifacts, no unresolved applicable pre-generation CORE Commercial Layout Calibration `Revise`, and no material unresolved Thumbnail risk estimate. Rendered thumbnail evidence is not required for this pre-generation status. If the Handoff is missing, incomplete, not recorded, or not READY, do not begin generation; a generated result is not evidence that READY was reached. Use BLOCKED when required evidence is missing, unavailable, conflicting, insufficient, an artifact is missing, or an applicable pre-generation CORE calibration issue or material thumbnail risk remains unresolved. Planning-only Mode cannot receive READY for a real product-fidelity visual without a usable Present PR. Keep the handoff as a concise readiness checkpoint rather than duplicating upstream analysis.
 
 Do not begin text-free production until the handoff is complete and READY.
 
@@ -123,11 +139,17 @@ For each Blocking or High issue:
 4. repeat the side-by-side check.
 
 After composition and typography, run the rendered commercial-layout recheck
-for product prominence, typography hierarchy, product / copy balance,
-empty-space efficiency, grounding, information grouping, mobile-thumbnail
-clarity, and visual reading order. If any applicable rendered CORE item is
-`Revise`, revise the composition, typography, or background, rerender, and
-repeat the check. Keep Product Fidelity QA independent and authoritative.
+with actual rendered evidence for product prominence, typography hierarchy,
+product / copy balance, empty-space efficiency, grounding, information
+grouping, visual reading order, and mobile-thumbnail clarity using a
+consistent reduced-size preview. Reuse the criterion-specific evidence rules
+in `commercial-layout-calibration.md` for rendered product-scale
+counterfactuals, functional empty-space regions, materially distinct
+typography hierarchy, and insufficient generic evidence. Rendered evidence is
+authoritative when it contradicts the Blueprint. If any applicable rendered CORE item is `Revise`,
+revise the composition, typography, or background, rerender, and repeat the
+check. Without actual thumbnail inspection, final commercial completion is
+forbidden. Keep Product Fidelity QA independent and authoritative.
 
 Stop only when no Product Fidelity Blocking or High issue remains and no
 applicable rendered commercial CORE item remains `Revise`, or when missing

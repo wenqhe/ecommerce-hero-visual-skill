@@ -91,8 +91,22 @@ Commercial Layout Calibration or Side-by-side Reference QA.
 
 Do not treat a pre-generation blueprint status as proof that the rendered
 image has passed. Recheck contrast, scale, occlusion, and grounding on the
-actual composition. Do not duplicate the complete pre-generation calibration
-record here.
+actual composition. Inspect a consistent reduced-size thumbnail and record
+the actual preview evidence for `Mobile-thumbnail clarity`; no actual
+thumbnail inspection means final commercial completion is forbidden. Reuse the
+criterion-specific evidence rules in the calibration reference: repeat the
+Largest Effective Product Scale counterfactual for rendered product
+scale/prominence; verify the actual purpose of every major empty-space region;
+identify the actual Primary message, Secondary / supporting information, and
+Commercial anchor when applicable; and verify materially distinct typography
+hierarchy at rendered size. If rendered bilingual density reduces useful
+typography or product prominence, mark typography `Revise`. Rendered evidence
+is authoritative when it contradicts the Blueprint. For every applicable
+rendered CORE criterion, record Status, Observation, Evidence, and why no
+material revision is needed or the required action. Generic evidence such as
+“product is visible”, “headline is readable”, “there is breathing room”, or
+“shadow exists” is insufficient for `Calibrated`. Do not duplicate the
+complete pre-generation calibration record here.
 
 If any applicable rendered commercial CORE item is `Revise`:
 

@@ -78,26 +78,49 @@ negative-space, promotion, CTA, and Brand Asset zones. It must minimally
 record the selected archetype, intended product zone and prominence, copy
 zones, primary communication anchor, supporting-information grouping, price /
 CTA relationship when applicable, negative-space purpose, grounding intent,
-and intended visual reading order. Identify protected product areas without
-introducing fixed product-specific dimensions. If the recorded Draft Layout
-Blueprint is missing, Commercial Layout Calibration cannot run and
-pre-generation status is `BLOCKED`.
+and intended visual reading order. Classify the purpose of each major canvas
+region as product, primary communication, supporting information, commercial
+anchor / price / CTA, intentional separation, or intentional atmosphere. Add a
+non-final `Thumbnail risk estimate` covering planned product prominence,
+primary-message prominence, commercial-anchor prominence, and likely
+information-density risk. It does not replace rendered thumbnail validation.
+Identify protected product areas without introducing fixed product-specific
+dimensions. If the recorded Draft Layout Blueprint is missing, Commercial
+Layout Calibration cannot run and pre-generation status is `BLOCKED`.
 
 ### 7. Run Commercial Layout Calibration
 
 Read [references/commercial-layout-calibration.md](references/commercial-layout-calibration.md).
 Evaluate the recorded Draft Layout Blueprint before generation and retain a
 recorded Commercial Layout Calibration result. The record must contain every
-applicable CORE diagnostic and relevant ARCHETYPE-CONDITIONAL diagnostics,
+applicable pre-generation CORE diagnostic and relevant ARCHETYPE-CONDITIONAL diagnostics,
 using exactly `Calibrated`, `Revise`, or `Not Applicable`.
 
-If an applicable CORE diagnostic is `Revise`, identify the commercial layout
-problem, revise the Layout Blueprint, and rerun the affected checks. Do not
-continue to the Pre-generation Handoff with unresolved applicable CORE
-`Revise` items. Record each revised result. If the Commercial Layout
-Calibration record is missing, set `PRE-GENERATION STATUS = BLOCKED` and do
-not begin generation. `Not Applicable` does not block readiness. Commercial
-calibration cannot override the Product Fidelity Lock.
+Before an applicable pre-generation CORE item is `Calibrated`, record its
+Status, Observation, Evidence, and why no material revision is needed (or the
+required action). Generic
+claims such as “product is visible”, “headline is readable”, “there is
+breathing room”, or “shadow exists” are insufficient. Product scale requires
+an explicit `Largest Effective Product Scale` counterfactual test. Typography
+requires an explicit primary message, supporting information, and commercial
+anchor when applicable, including a check that bilingual density does not
+shrink the type system or product below a commercially useful level. The
+Blueprint must explain the function of each major region; materially
+non-functional empty space is `Revise`.
+
+`Mobile-thumbnail clarity` is rendered-only and is not assigned a calibration
+status in this pre-generation record. Before generation, record only the
+Blueprint-level `Thumbnail risk estimate`; it may be clear without rendered
+thumbnail evidence when no other applicable pre-generation CORE item remains
+`Revise` and no material thumbnail risk is unresolved.
+
+If an applicable pre-generation CORE diagnostic is `Revise`, identify the
+commercial layout problem, revise the Layout Blueprint, and rerun the affected
+checks. Do not continue to the Pre-generation Handoff with unresolved
+applicable pre-generation CORE `Revise` items. Record each revised result. If
+the Commercial Layout Calibration record is missing, set `PRE-GENERATION
+STATUS = BLOCKED` and do not begin generation. `Not Applicable` does not block
+readiness. Commercial calibration cannot override the Product Fidelity Lock.
 
 ### 8. Complete the Pre-generation Handoff
 
@@ -106,15 +129,15 @@ the recorded Draft Layout Blueprint and Commercial Layout Calibration Record,
 and summarize the Reference Asset Inventory availability statuses, evidence
 conflicts and unresolved Unknowns, Production Mode, Product Fidelity Lock
 statuses, selected direction, Reference Feasibility, Fidelity Risk, Reference
-Image Usage Plan, Layout Blueprint, calibration outcome, and outstanding
-blockers.
+Image Usage Plan, Layout Blueprint, Thumbnail risk estimate, calibration
+outcome, and outstanding blockers.
 
 Set the final readiness status to exactly one of:
 
 - `READY FOR TEXT-FREE PRODUCTION`;
 - `BLOCKED`.
 
-Use `READY FOR TEXT-FREE PRODUCTION` only when the selected mode supports the requested stage, required Present evidence exists, the intended product view is supported, no unresolved conflict or blocker prevents faithful production, the selected direction can preserve the Product Fidelity Lock, the recorded Draft Layout Blueprint and Commercial Layout Calibration Record are complete, and no applicable CORE Commercial Layout Calibration diagnostic remains `Revise`. If the Handoff is missing, incomplete, not recorded, or not READY, do not begin generation; a generated result is not evidence that READY was reached. Use `BLOCKED` when required evidence is missing, unavailable, conflicting, insufficient, an artifact is missing, or an applicable CORE calibration issue remains unresolved. Planning-only Mode may continue planning, but it cannot receive READY for a real product-fidelity visual without a usable Present PR.
+Use `READY FOR TEXT-FREE PRODUCTION` only when the selected mode supports the requested stage, required Present evidence exists, the intended product view is supported, no unresolved conflict or blocker prevents faithful production, the selected direction can preserve the Product Fidelity Lock, the recorded Draft Layout Blueprint and Commercial Layout Calibration Record are complete, no applicable pre-generation CORE Commercial Layout Calibration diagnostic remains `Revise`, and the Thumbnail risk estimate has no material unresolved risk. Rendered `Mobile-thumbnail clarity` is not required for this pre-generation status. If the Handoff is missing, incomplete, not recorded, or not READY, do not begin generation; a generated result is not evidence that READY was reached. Use `BLOCKED` when required evidence is missing, unavailable, conflicting, insufficient, an artifact is missing, or an applicable pre-generation CORE calibration issue or material thumbnail risk remains unresolved. Planning-only Mode may continue planning, but it cannot receive READY for a real product-fidelity visual without a usable Present PR.
 
 This handoff is a readiness checkpoint, not a duplicate of the upstream analysis tables. Do not begin text-free production until it is complete and READY.
 
@@ -143,7 +166,7 @@ would reduce clarity.
 
 ### 11. Run Side-by-side Reference QA and Iterate
 
-Use [references/quality-checklist.md](references/quality-checklist.md). Compare the output directly against every applicable PR, PD, and BA reference. Record Pass, Revise, Blocked, or Not Visible for each attribute, assign severity, fix every Blocking or High issue, and re-check the affected criteria. Also complete the rendered commercial-layout recheck described in the checklist; it does not replace Side-by-side Reference QA or retroactively validate the pre-generation blueprint. If any applicable rendered commercial CORE item is `Revise`, revise the composition, typography, or background, rerender, and recheck before completion.
+Use [references/quality-checklist.md](references/quality-checklist.md). Compare the output directly against every applicable PR, PD, and BA reference. Record Pass, Revise, Blocked, or Not Visible for each attribute, assign severity, fix every Blocking or High issue, and re-check the affected criteria. Also complete the rendered commercial-layout recheck described in the checklist using actual rendered evidence, including a consistent reduced-size thumbnail preview and the criterion-specific evidence rules from the calibration reference; it does not replace Side-by-side Reference QA or retroactively validate the pre-generation blueprint. Rendered QA is authoritative when it contradicts the Blueprint. If any applicable rendered commercial CORE item is `Revise`, revise the composition, typography, or background, rerender, and recheck before completion. Without an actual thumbnail inspection, final commercial completion is forbidden.
 
 Completion requires either:
 
