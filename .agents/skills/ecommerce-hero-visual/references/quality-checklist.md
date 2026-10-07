@@ -1,6 +1,11 @@
 # Quality Checklist
 
-Use Pass, Revise, Blocked, or Not Visible for each applicable item. A category is Blocked when required source evidence is unavailable. Do not mark a final visual complete while a Blocking or High issue remains.
+Use Pass, Revise, Blocked, or Not Visible for Product Fidelity and other
+existing QA items. A category is Blocked when required source evidence is
+unavailable. Commercial Layout Calibration and its rendered commercial
+recheck use the separate statuses `Calibrated`, `Revise`, and `Not Applicable`.
+Do not mark a final visual complete while a Blocking or High issue or an
+applicable rendered commercial CORE `Revise` remains.
 
 ## Reference Intake and Traceability
 
@@ -54,6 +59,7 @@ For every mismatch, record the Reference IDs, output observation, status, severi
 - Are price, discount, dates, CTA, certifications, and promotional rules exact?
 - Are strategic proposals clearly separated from facts?
 - Is bilingual copy equivalent in meaning without adding claims?
+- Is every displayed text item confirmed, and has no unconfirmed substitute copy been added for layout reasons?
 
 ## Communication and Composition
 
@@ -88,6 +94,25 @@ image has passed. Recheck contrast, scale, occlusion, and grounding on the
 actual composition. Do not duplicate the complete pre-generation calibration
 record here.
 
+If any applicable rendered commercial CORE item is `Revise`:
+
+1. identify the layout problem;
+2. revise composition, typography, or background;
+3. rerender the visual;
+4. repeat the rendered commercial recheck.
+
+The visual is not complete until no applicable rendered commercial CORE item
+remains `Revise`. Product Fidelity QA remains independent and authoritative.
+
+## Commercial Completion Status
+
+Report exactly one commercial completion status separately from Product
+Fidelity QA:
+
+- `COMMERCIAL LAYOUT PASSED` — no applicable rendered commercial CORE item is `Revise`;
+- `COMMERCIAL LAYOUT REQUIRES REVISION` — at least one applicable rendered commercial CORE item is `Revise`;
+- `BLOCKED` — required evidence or a required workflow artifact is missing or prevents correction.
+
 ## Severity
 
 - Blocking: product identity changed, a product structure or fact was invented, the wrong product or logo appears, or no valid PR supports the output;
@@ -111,6 +136,8 @@ For every Revise item, record:
 Completion requires:
 
 - no unresolved Blocking or High issue;
+- no unresolved applicable rendered commercial CORE `Revise`;
 - no invented product fact or structure;
 - a completed Side-by-side Reference QA record;
-- or an explicit Blocked status explaining which verified input is missing.
+- a completed rendered commercial-layout recheck and commercial completion status;
+- or an explicit `BLOCKED` status explaining which verified input or required artifact is missing.

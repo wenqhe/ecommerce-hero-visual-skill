@@ -12,6 +12,7 @@ Create commercially clear product hero visuals while preserving product identity
 - Analyze the request, facts, and reference assets before generating anything.
 - Treat approved Product Reference Images, Product Detail References, Brand Assets, and confirmed facts as controlled evidence.
 - Never invent or upgrade product parameters, functions, shape, structure, materials, colors, accessories, prices, discounts, dates, certifications, awards, badges, promotional rules, logos, or markings.
+- Confirmed copy controls factual truth but does not require equal visual weight or a separate visual zone. Unconfirmed copy must never be added to improve layout.
 - Style Reference and Layout Reference are not product-fact sources.
 - Layout Reference may influence only composition, information density, visual hierarchy, text/product balance, and negative-space planning. Do not copy the reference design itself.
 - Prefer approved product cutouts or original product pixels with a separately generated text-free background.
@@ -72,32 +73,48 @@ Style Reference may transfer only approved style properties. Layout Reference ma
 
 ### 6. Draft the Layout Blueprint
 
-Create a Layout Blueprint for the product, copy, negative-space, promotion,
-CTA, and Brand Asset zones. Identify protected product areas without
-introducing fixed product-specific dimensions.
+Create and retain a recorded Draft Layout Blueprint for the product, copy,
+negative-space, promotion, CTA, and Brand Asset zones. It must minimally
+record the selected archetype, intended product zone and prominence, copy
+zones, primary communication anchor, supporting-information grouping, price /
+CTA relationship when applicable, negative-space purpose, grounding intent,
+and intended visual reading order. Identify protected product areas without
+introducing fixed product-specific dimensions. If the recorded Draft Layout
+Blueprint is missing, Commercial Layout Calibration cannot run and
+pre-generation status is `BLOCKED`.
 
 ### 7. Run Commercial Layout Calibration
 
 Read [references/commercial-layout-calibration.md](references/commercial-layout-calibration.md).
-Evaluate the draft Layout Blueprint before generation using exactly
-`Calibrated`, `Revise`, or `Not Applicable` for each applicable diagnostic.
+Evaluate the recorded Draft Layout Blueprint before generation and retain a
+recorded Commercial Layout Calibration result. The record must contain every
+applicable CORE diagnostic and relevant ARCHETYPE-CONDITIONAL diagnostics,
+using exactly `Calibrated`, `Revise`, or `Not Applicable`.
 
 If an applicable CORE diagnostic is `Revise`, identify the commercial layout
 problem, revise the Layout Blueprint, and rerun the affected checks. Do not
 continue to the Pre-generation Handoff with unresolved applicable CORE
-`Revise` items. `Not Applicable` does not block readiness. Commercial
+`Revise` items. Record each revised result. If the Commercial Layout
+Calibration record is missing, set `PRE-GENERATION STATUS = BLOCKED` and do
+not begin generation. `Not Applicable` does not block readiness. Commercial
 calibration cannot override the Product Fidelity Lock.
 
 ### 8. Complete the Pre-generation Handoff
 
-Then create a concise Pre-generation Handoff. It must summarize the Reference Asset Inventory availability statuses, evidence conflicts and unresolved Unknowns, Production Mode, Product Fidelity Lock statuses, selected direction, Reference Feasibility, Fidelity Risk, Reference Image Usage Plan, Layout Blueprint, and outstanding blockers.
+Then create and retain a concise Pre-generation Handoff. It must reference
+the recorded Draft Layout Blueprint and Commercial Layout Calibration Record,
+and summarize the Reference Asset Inventory availability statuses, evidence
+conflicts and unresolved Unknowns, Production Mode, Product Fidelity Lock
+statuses, selected direction, Reference Feasibility, Fidelity Risk, Reference
+Image Usage Plan, Layout Blueprint, calibration outcome, and outstanding
+blockers.
 
 Set the final readiness status to exactly one of:
 
 - `READY FOR TEXT-FREE PRODUCTION`;
 - `BLOCKED`.
 
-Use `READY FOR TEXT-FREE PRODUCTION` only when the selected mode supports the requested stage, required Present evidence exists, the intended product view is supported, no unresolved conflict or blocker prevents faithful production, the selected direction can preserve the Product Fidelity Lock, and no applicable CORE Commercial Layout Calibration diagnostic remains `Revise`. Use `BLOCKED` when required evidence is missing, unavailable, conflicting, insufficient, or an applicable CORE calibration issue remains unresolved. Planning-only Mode may continue planning, but it cannot receive READY for a real product-fidelity visual without a usable Present PR.
+Use `READY FOR TEXT-FREE PRODUCTION` only when the selected mode supports the requested stage, required Present evidence exists, the intended product view is supported, no unresolved conflict or blocker prevents faithful production, the selected direction can preserve the Product Fidelity Lock, the recorded Draft Layout Blueprint and Commercial Layout Calibration Record are complete, and no applicable CORE Commercial Layout Calibration diagnostic remains `Revise`. If the Handoff is missing, incomplete, not recorded, or not READY, do not begin generation; a generated result is not evidence that READY was reached. Use `BLOCKED` when required evidence is missing, unavailable, conflicting, insufficient, an artifact is missing, or an applicable CORE calibration issue remains unresolved. Planning-only Mode may continue planning, but it cannot receive READY for a real product-fidelity visual without a usable Present PR.
 
 This handoff is a readiness checkpoint, not a duplicate of the upstream analysis tables. Do not begin text-free production until it is complete and READY.
 
@@ -115,16 +132,29 @@ The text-free output must preserve the Product Fidelity Lock, leave usable type 
 
 ### 10. Add Copy and Brand Assets
 
-Add only confirmed copy. Use supplied official Brand Assets directly, especially logos and product marks. Do not redraw them with a generation model. Create separate language variants by default when combined bilingual typography would reduce clarity.
+Add only confirmed copy. Confirmed copy may be grouped, reduced in secondary
+prominence, or combined into a coherent information module without changing
+its meaning or omitting text explicitly required by the task. It does not
+require equal visual weight or a separate visual zone. Do not invent
+substitute copy. Use supplied official Brand Assets directly, especially
+logos and product marks. Do not redraw them with a generation model. Create
+separate language variants by default when combined bilingual typography
+would reduce clarity.
 
 ### 11. Run Side-by-side Reference QA and Iterate
 
-Use [references/quality-checklist.md](references/quality-checklist.md). Compare the output directly against every applicable PR, PD, and BA reference. Record Pass, Revise, Blocked, or Not Visible for each attribute, assign severity, fix every Blocking or High issue, and re-check the affected criteria. Also complete the concise rendered commercial-layout recheck described in the checklist; it does not replace Side-by-side Reference QA or retroactively validate the pre-generation blueprint.
+Use [references/quality-checklist.md](references/quality-checklist.md). Compare the output directly against every applicable PR, PD, and BA reference. Record Pass, Revise, Blocked, or Not Visible for each attribute, assign severity, fix every Blocking or High issue, and re-check the affected criteria. Also complete the rendered commercial-layout recheck described in the checklist; it does not replace Side-by-side Reference QA or retroactively validate the pre-generation blueprint. If any applicable rendered commercial CORE item is `Revise`, revise the composition, typography, or background, rerender, and recheck before completion.
 
 Completion requires either:
 
-- no unresolved Blocking or High issue; or
-- a clear Blocked status explaining which verified input is missing.
+- no unresolved Product Fidelity Blocking or High issue and no unresolved applicable rendered Commercial Layout CORE `Revise`; or
+- a clear `BLOCKED` status explaining which verified input or required artifact is missing.
+
+Commercial completion status must be reported separately as exactly one of:
+
+- `COMMERCIAL LAYOUT PASSED`;
+- `COMMERCIAL LAYOUT REQUIRES REVISION`;
+- `BLOCKED`.
 
 Follow the production gates in [references/workflow-rules.md](references/workflow-rules.md).
 
@@ -147,6 +177,7 @@ Return the items relevant to the request:
 - reference-based text-free generation or composition prompt;
 - exact confirmed copy plan;
 - Side-by-side Reference QA, revisions, and final status;
+- rendered commercial-layout recheck and commercial completion status;
 - final visual variants when capability and required approved assets are available.
 
 ## Examples

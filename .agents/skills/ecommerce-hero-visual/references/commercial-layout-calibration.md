@@ -2,9 +2,10 @@
 
 ## Purpose
 
-Use this diagnostic after a Draft Layout Blueprint exists and before the
-Pre-generation Handoff. It evaluates intended commercial behavior without
-creating a fixed template or numerical scoring system.
+Use this diagnostic after a recorded Draft Layout Blueprint exists and before
+the Pre-generation Handoff. It evaluates intended commercial behavior without
+creating a fixed template or numerical scoring system. A missing Blueprint
+means calibration cannot run.
 
 ## Benchmark Boundary
 
@@ -32,6 +33,10 @@ Use exactly one status for each applicable diagnostic:
 `Not Applicable` is primarily for a diagnostic that genuinely does not belong
 to the selected archetype or task. Do not add cards, copy, prices, CTAs, or
 other elements merely to make a criterion applicable.
+
+The Commercial Layout Calibration Record is a required retained artifact.
+If it is missing, set `PRE-GENERATION STATUS = BLOCKED` and do not begin
+generation. Do not silently replace the record with a summary sentence.
 
 ## Diagnostic Classifications
 
@@ -130,11 +135,15 @@ diagnostic as conditional.
 
 ### Context
 
+- Record status:
 - Selected archetype:
 - Canvas / channel:
 - Draft Layout Blueprint:
 - Applicable references:
 - Product Fidelity Lock dependency:
+
+The record must be retained with the Draft Layout Blueprint and referenced by
+the Pre-generation Handoff.
 
 ### Results
 
@@ -169,7 +178,21 @@ If any applicable CORE diagnostic is `Revise`:
 
 Do not proceed to the Pre-generation Handoff with unresolved applicable CORE
 `Revise` items. Conditional `Revise` items should be corrected when relevant
-to the selected direction. `Not Applicable` does not block readiness.
+to the selected direction. Record each revision cycle and rerun the affected
+checks. `Not Applicable` does not block readiness.
 
 Commercial calibration cannot override the Product Fidelity Lock or permit
 unsupported product views, structures, colors, claims, or accessories.
+
+## Abstract Enforcement Regression
+
+Use abstract conditions only; do not encode a product, fixed scale, position,
+copy, color, or other visual parameter.
+
+| Condition | Required result |
+|---|---|
+| A. Calibration Record missing | `PRE-GENERATION STATUS = BLOCKED`; generation must not begin |
+| B. Applicable CORE pre-generation item is `Revise` | revise the Draft Layout Blueprint, rerun affected checks, and do not mark the Handoff READY |
+| C. Applicable rendered CORE item is `Revise` | refuse final completion; revise, rerender, and recheck |
+| D. No unresolved CORE `Revise` and fidelity QA is clean | final completion may proceed with a commercial completion status |
+| E. Unconfirmed extra copy is proposed | reject it; use only confirmed copy or a confirmed omission decision |
