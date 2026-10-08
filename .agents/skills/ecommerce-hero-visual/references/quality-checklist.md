@@ -99,9 +99,21 @@ Largest Effective Product Scale counterfactual for rendered product
 scale/prominence; verify the actual purpose of every major empty-space region;
 identify the actual Primary message, Secondary / supporting information, and
 Commercial anchor when applicable; and verify materially distinct typography
-hierarchy at rendered size. If rendered bilingual density reduces useful
-typography or product prominence, mark typography `Revise`. Rendered evidence
-is authoritative when it contradicts the Blueprint. For every applicable
+hierarchy at rendered size. For typography, also apply the Largest Effective
+Primary Message Scale counterfactual: if materially increasing the primary
+message visual scale while preserving product dominance, safe boundaries,
+intentional line breaks, supporting-information grouping, and commercial-anchor
+clarity would improve immediate commercial recognition, mark typography
+`Revise`; if further enlargement would materially damage one of those
+relationships, `Calibrated` requires explicit evidence. This evaluates visual
+prominence, not merely readability. In the reduced-size thumbnail, distinguish
+readable from commercially prominent: the primary message, supporting
+information, and commercial anchor when applicable must remain immediately
+distinguishable. If the primary message remains technically readable but
+visually collapses into ordinary supporting copy, mark typography `Revise`.
+If rendered bilingual density reduces useful typography or product prominence,
+mark typography `Revise`. Rendered evidence is authoritative when it
+contradicts the Blueprint. For every applicable
 rendered CORE criterion, record Status, Observation, Evidence, and why no
 material revision is needed or the required action. Generic evidence such as
 “product is visible”, “headline is readable”, “there is breathing room”, or

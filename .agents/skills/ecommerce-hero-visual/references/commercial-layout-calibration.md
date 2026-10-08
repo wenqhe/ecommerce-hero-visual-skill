@@ -236,6 +236,16 @@ similar weight, and bilingual density does not shrink the text system or
 product below a commercially useful level. A readability or size comparison
 alone is insufficient evidence.
 
+Also apply the `Largest Effective Primary Message Scale` counterfactual: ask
+whether materially increasing the primary-message visual scale, while
+preserving product dominance, safe boundaries, intentional line breaks,
+supporting-information grouping, and commercial-anchor clarity, would improve
+immediate commercial recognition. If yes, mark `Typography hierarchy strength =
+Revise`. If no because further enlargement would materially damage one of
+those relationships, `Calibrated` is permitted only with explicit evidence of
+that limiting relationship. This evaluates visual prominence, not merely text
+readability.
+
 `Confirmed copy = factual authority.` `Copy presentation = hierarchy
 decision.` Related confirmed facts may be grouped or subordinated without
 changing meaning. Do not invent substitute copy or silently omit content the
@@ -311,8 +321,22 @@ specific evidence logic to the actual render:
 - For rendered typography hierarchy, identify the Primary message,
   Secondary / supporting information, and Commercial anchor when applicable.
   Verify that the hierarchy remains materially distinct at the actual
-  rendered size. If bilingual density forces typography or product prominence
-  below a commercially useful level, mark typography `Revise`.
+  rendered size. Apply the `Largest Effective Primary Message Scale`
+  counterfactual: ask whether materially increasing the primary-message visual
+  scale, while preserving product dominance, safe boundaries, intentional line
+  breaks, supporting-information grouping, and commercial-anchor clarity, would
+  improve immediate commercial recognition. If yes, mark typography `Revise`;
+  if no because further enlargement would materially damage one of those
+  relationships, `Calibrated` requires explicit evidence. This evaluates visual
+  prominence, not merely text readability. If bilingual density forces
+  typography or product prominence below a commercially useful level, mark
+  typography `Revise`.
+- In the consistent reduced-size thumbnail, distinguish technically readable
+  text from commercially prominent text. The primary message, supporting
+  information, and commercial anchor when applicable must remain immediately
+  distinguishable as separate hierarchy layers. If the primary message remains
+  readable but visually collapses into ordinary supporting copy, mark
+  typography `Revise`.
 - Generic rendered evidence such as “product is visible”, “headline is
   readable”, “there is breathing room”, or “shadow exists” is insufficient
   for `Calibrated`.
@@ -354,3 +378,6 @@ copy, color, or other visual parameter.
 | Q. Generic grounding evidence such as “shadow exists” | insufficient for `Calibrated` |
 | R. Support contact, shadow, perspective, lighting, edge integration, and perceived weight are coherent | `Grounding` may be `Calibrated` |
 | S. Intentionally suspended composition has a coherent physical scene relationship | `Grounding` may be `Calibrated` without floor contact |
+| T. Small-but-readable headline: headline is larger than body copy but can be materially enlarged without harming the composition | `Typography hierarchy = Revise` |
+| U. Near-effective-limit headline: further enlargement would materially harm product dominance, line breaks, safe boundaries, or commercial-anchor clarity | `Typography hierarchy = Calibrated` when explicit evidence is recorded |
+| V. Thumbnail hierarchy collapse: headline remains readable at reduced size but no longer reads as the primary communication layer | `Typography hierarchy = Revise` |
