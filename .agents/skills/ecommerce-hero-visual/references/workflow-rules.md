@@ -33,6 +33,13 @@ and Unknown / unverified properties. Record only visibly supported evidence;
 do not infer hidden contact surfaces, support hardware, or unseen lighting
 behavior.
 
+After this profile and before Visual Strategy, classify the Task / Layout
+Profile and consider optional Benchmark Layout Retrieval under
+[benchmark-layout-retrieval.md](benchmark-layout-retrieval.md). Use selected
+metadata and, only when actually available and opened, selected images as
+advisory comparative context. Retrieval failure or absence does not block the
+workflow.
+
 ## Gate 4 — Communication Accuracy and Strategy Feasibility
 
 Complete the brief, evidence classification, communication hierarchy, and visual direction before generation. Confirmed copy controls factual truth but does not require equal visual weight or a separate visual zone. Grouping or reducing secondary prominence is allowed when meaning is preserved. Do not add unconfirmed substitute copy merely to improve layout.
@@ -114,10 +121,13 @@ lighting and support evidence, plausible perspective and local scale, and a
 credible plan to avoid a pasted or sticker effect. A material incompatibility
 in either evidence category is `Grounding = Revise`.
 
-Commercial calibration cannot override the Product Fidelity Lock. The
-research benchmark set is diagnostic context only; runtime operation must
-not require local benchmark assets, load them automatically, or copy their
-distinctive compositions or content.
+Commercial calibration cannot override the Product Fidelity Lock. Benchmark
+retrieval follows the optional protocol linked above; it may use compact
+metadata and explicitly selected images only. Do not load the image set
+automatically. Benchmark support is advisory and must not replace diagnostic
+evidence, add a readiness gate, or copy distinctive compositions or content.
+If metadata, the selector, or selected images are unavailable, continue with
+qualitative calibration; benchmark absence must not block production.
 
 ## Gate 8 — Pre-generation Handoff
 

@@ -1,0 +1,2531 @@
+{
+  "artifact": "Benchmark Layout Runtime Index",
+  "version": 1,
+  "note": "Compatibility and retrieval metadata only; does not establish image availability or contain visual parameters.",
+  "references": [
+    {
+      "reference_id": "R1-01",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "isolated-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "unknown",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "feature-specification-panel"
+      ],
+      "primary_anchor_type": "feature-specification-panel",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "unknown",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "human_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R1-04",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "multi-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "2-3",
+      "headline_presence": "present",
+      "supporting_copy_presence": "unknown",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "comparison-capsule"
+      ],
+      "primary_anchor_type": "comparison-capsule",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "unknown",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "headline_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R1-07",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-scene",
+      "orientation": "landscape",
+      "aspect_ratio_family": "square",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "unknown",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "feature-specification-panel"
+      ],
+      "primary_anchor_type": "feature-specification-panel",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "present",
+      "grounding_context": "environmental-grounding",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation",
+          "environment_scene_presence"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "grounding_context"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "grounding_context"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R1-05",
+      "archetype": "Lifestyle Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-human",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "unknown",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "action-anchor"
+      ],
+      "primary_anchor_type": "action-anchor",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "high",
+      "human_presence": "present",
+      "environment_scene_presence": "present",
+      "grounding_context": "human-held",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ],
+        "M": [
+          "headline_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "commercial_anchor_presence",
+          "human_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "environment_scene_presence",
+          "grounding_context",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-05",
+      "archetype": "Clean Product Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "isolated-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "absent",
+      "commercial_anchor_types": [],
+      "primary_anchor_type": "none",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "low",
+      "fragmentation": "low",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "absent",
+      "grounding_context": "visible-support-plane",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "grounding_context"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-08",
+      "archetype": "Clean Product Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "isolated-product",
+      "orientation": "landscape",
+      "aspect_ratio_family": "landscape",
+      "product_group_count_band": "single",
+      "headline_presence": "absent",
+      "supporting_copy_presence": "absent",
+      "commercial_anchor_presence": "absent",
+      "commercial_anchor_types": [],
+      "primary_anchor_type": "none",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "low",
+      "fragmentation": "low",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "absent",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence"
+        ],
+        "M": [
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R1-02",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-human",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "action-anchor"
+      ],
+      "primary_anchor_type": "action-anchor",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "high",
+      "human_presence": "present",
+      "environment_scene_presence": "present",
+      "grounding_context": "human-held",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "environment_scene_presence",
+          "grounding_context",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R1-03",
+      "archetype": "Action / Brand Campaign",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-human",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "key-number"
+      ],
+      "primary_anchor_type": "key-number",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "high",
+      "human_presence": "present",
+      "environment_scene_presence": "present",
+      "grounding_context": "human-held",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "grounding_context"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "environment_scene_presence",
+          "grounding_context",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R1-06",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-scene",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "feature-specification-panel"
+      ],
+      "primary_anchor_type": "feature-specification-panel",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "medium",
+      "human_presence": "absent",
+      "environment_scene_presence": "present",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R1-08",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "isolated-product",
+      "orientation": "square",
+      "aspect_ratio_family": "square",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "key-number"
+      ],
+      "primary_anchor_type": "key-number",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "absent",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R1-09",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "isolated-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "feature-cards"
+      ],
+      "primary_anchor_type": "feature-cards",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "absent",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R1-10",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "isolated-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "key-number"
+      ],
+      "primary_anchor_type": "key-number",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "absent",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-01",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-scene",
+      "orientation": "landscape",
+      "aspect_ratio_family": "square",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "feature-specification-panel"
+      ],
+      "primary_anchor_type": "feature-specification-panel",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "present",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-02",
+      "archetype": "Multi-product / Bundle Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "multi-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "2-3",
+      "headline_presence": "absent",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "absent",
+      "commercial_anchor_types": [],
+      "primary_anchor_type": "none",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "unknown",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "headline_presence"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-03",
+      "archetype": "Lifestyle Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-human",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "absent",
+      "commercial_anchor_types": [],
+      "primary_anchor_type": "none",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "low",
+      "fragmentation": "low",
+      "product_visual_mass": "high",
+      "human_presence": "present",
+      "environment_scene_presence": "present",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band",
+          "environment_scene_presence"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass",
+          "environment_scene_presence"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-04",
+      "archetype": "Multi-product / Bundle Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "multi-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "2-3",
+      "headline_presence": "absent",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "absent",
+      "commercial_anchor_types": [],
+      "primary_anchor_type": "none",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "low",
+      "fragmentation": "low",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "unknown",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "headline_presence"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-06",
+      "archetype": "Clean Product Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "isolated-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "absent",
+      "commercial_anchor_types": [],
+      "primary_anchor_type": "none",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "low",
+      "fragmentation": "low",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "absent",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-07",
+      "archetype": "Multi-product / Bundle Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "multi-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "2-3",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "promotion-band"
+      ],
+      "primary_anchor_type": "promotion-band",
+      "price_or_promotion_presence": "present",
+      "cta_presence": "unknown",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "unknown",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "price_or_promotion_presence"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "price_or_promotion_presence",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-09",
+      "archetype": "Lifestyle Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-human",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "unknown",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "badge"
+      ],
+      "primary_anchor_type": "badge",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "medium",
+      "human_presence": "present",
+      "environment_scene_presence": "present",
+      "grounding_context": "human-held",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ],
+        "M": [
+          "headline_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "grounding_context",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-10",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-scene",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "badge"
+      ],
+      "primary_anchor_type": "badge",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "medium",
+      "human_presence": "absent",
+      "environment_scene_presence": "present",
+      "grounding_context": "environmental-grounding",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "grounding_context"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "grounding_context",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-11",
+      "archetype": "Price / Promotion-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-scene",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "price"
+      ],
+      "primary_anchor_type": "price",
+      "price_or_promotion_presence": "present",
+      "cta_presence": "unknown",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "medium",
+      "human_presence": "absent",
+      "environment_scene_presence": "present",
+      "grounding_context": "environmental-grounding",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "grounding_context"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "grounding_context",
+          "product_visual_mass",
+          "price_or_promotion_presence"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-12",
+      "archetype": "Price / Promotion-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-scene",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "price"
+      ],
+      "primary_anchor_type": "price",
+      "price_or_promotion_presence": "present",
+      "cta_presence": "unknown",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "medium",
+      "human_presence": "absent",
+      "environment_scene_presence": "present",
+      "grounding_context": "environmental-grounding",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "price_or_promotion_presence",
+          "grounding_context"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "grounding_context",
+          "product_visual_mass",
+          "price_or_promotion_presence"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-13",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-scene",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "key-number"
+      ],
+      "primary_anchor_type": "key-number",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "medium",
+      "human_presence": "absent",
+      "environment_scene_presence": "present",
+      "grounding_context": "environmental-grounding",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "grounding_context"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "grounding_context",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-14",
+      "archetype": "Price / Promotion-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "multi-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "2-3",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "promotion-band"
+      ],
+      "primary_anchor_type": "promotion-band",
+      "price_or_promotion_presence": "present",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "unknown",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "price_or_promotion_presence"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "price_or_promotion_presence",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-15",
+      "archetype": "Price / Promotion-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "multi-product",
+      "orientation": "landscape",
+      "aspect_ratio_family": "square",
+      "product_group_count_band": "2-3",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "cta"
+      ],
+      "primary_anchor_type": "cta",
+      "price_or_promotion_presence": "present",
+      "cta_presence": "present",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "unknown",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "cta_presence",
+          "price_or_promotion_presence"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "product_group_count_band",
+          "cta_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "price_or_promotion_presence",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-16",
+      "archetype": "Multi-product / Bundle Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "multi-product",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "2-3",
+      "headline_presence": "present",
+      "supporting_copy_presence": "absent",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "badge"
+      ],
+      "primary_anchor_type": "badge",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "moderate",
+      "fragmentation": "moderate",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "unknown",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "headline_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "supporting_copy_presence",
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-17",
+      "archetype": "Action / Brand Campaign",
+      "hybrid_archetype_tags": [],
+      "subject_model": "multi-product",
+      "orientation": "landscape",
+      "aspect_ratio_family": "ultra-wide",
+      "product_group_count_band": "2-3",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "cta"
+      ],
+      "primary_anchor_type": "cta",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "present",
+      "copy_density_band": "low",
+      "fragmentation": "low",
+      "product_visual_mass": "medium",
+      "human_presence": "absent",
+      "environment_scene_presence": "unknown",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "cta_presence"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "cta_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-18",
+      "archetype": "Secondary Detail / Information Card",
+      "hybrid_archetype_tags": [],
+      "subject_model": "macro-detail",
+      "orientation": "landscape",
+      "aspect_ratio_family": "square",
+      "product_group_count_band": "unknown",
+      "headline_presence": "present",
+      "supporting_copy_presence": "unknown",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "feature-specification-panel"
+      ],
+      "primary_anchor_type": "feature-specification-panel",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "low",
+      "fragmentation": "low",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "absent",
+      "grounding_context": "unknown",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "product_group_count_band",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "product_group_count_band",
+          "supporting_copy_presence",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "grounding_context"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-19",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-human",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "feature-cards"
+      ],
+      "primary_anchor_type": "feature-cards",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "low",
+      "human_presence": "present",
+      "environment_scene_presence": "unknown",
+      "grounding_context": "human-held",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "grounding_context"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "grounding_context",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence",
+          "environment_scene_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-20",
+      "archetype": "Lifestyle Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "product-plus-human",
+      "orientation": "portrait",
+      "aspect_ratio_family": "portrait",
+      "product_group_count_band": "single",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "feature-cards"
+      ],
+      "primary_anchor_type": "feature-cards",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "low",
+      "human_presence": "present",
+      "environment_scene_presence": "present",
+      "grounding_context": "human-held",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "environment_scene_presence",
+          "grounding_context"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "environment_scene_presence"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "product_group_count_band",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "grounding_context",
+          "product_visual_mass"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      }
+    },
+    {
+      "reference_id": "R2-21",
+      "archetype": "Feature-led Hero",
+      "hybrid_archetype_tags": [],
+      "subject_model": "multi-product",
+      "orientation": "landscape",
+      "aspect_ratio_family": "square",
+      "product_group_count_band": "2-3",
+      "headline_presence": "present",
+      "supporting_copy_presence": "present",
+      "commercial_anchor_presence": "present",
+      "commercial_anchor_types": [
+        "detail-inset"
+      ],
+      "primary_anchor_type": "detail-inset",
+      "price_or_promotion_presence": "unknown",
+      "cta_presence": "unknown",
+      "copy_density_band": "high",
+      "fragmentation": "high",
+      "product_visual_mass": "high",
+      "human_presence": "absent",
+      "environment_scene_presence": "present",
+      "grounding_context": "environmental-grounding",
+      "field_provenance": {
+        "E": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "product_visual_mass",
+          "fragmentation"
+        ],
+        "N": [
+          "commercial_anchor_types",
+          "environment_scene_presence",
+          "grounding_context"
+        ],
+        "I": [
+          "aspect_ratio_family",
+          "primary_anchor_type",
+          "copy_density_band"
+        ],
+        "U": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      },
+      "field_confidence": {
+        "H": [
+          "archetype",
+          "subject_model",
+          "orientation",
+          "headline_presence",
+          "supporting_copy_presence",
+          "commercial_anchor_presence",
+          "human_presence",
+          "product_group_count_band"
+        ],
+        "M": [
+          "aspect_ratio_family",
+          "commercial_anchor_types",
+          "primary_anchor_type",
+          "copy_density_band",
+          "fragmentation",
+          "product_visual_mass",
+          "environment_scene_presence",
+          "grounding_context"
+        ],
+        "L": [
+          "hybrid_archetype_tags",
+          "price_or_promotion_presence",
+          "cta_presence"
+        ]
+      }
+    }
+  ]
+}

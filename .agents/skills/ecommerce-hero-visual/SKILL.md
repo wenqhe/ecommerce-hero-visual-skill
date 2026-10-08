@@ -68,7 +68,21 @@ suspension intent, and Unknown / unverified properties. Record only visibly
 supported evidence. Do not infer hidden contact surfaces, support hardware, or
 unseen lighting behavior.
 
-### 4. Build the Communication and Visual Strategy
+### 4. Classify the Task and Retrieve Optional Layout Benchmarks
+
+After the Product Fidelity Lock and Product Lighting and Contact Profile are
+complete, classify the Task / Layout Profile and decide whether optional
+Benchmark Layout Retrieval would help. Follow
+[references/benchmark-layout-retrieval.md](references/benchmark-layout-retrieval.md).
+Use the compact metadata and deterministic selector only when available; load
+only selected benchmark images after resolving and opening them in the current
+run. Retrieval is advisory: unavailable or insufficient benchmark support
+falls back to the existing qualitative workflow and never blocks production.
+Benchmark evidence may inform Visual Strategy and the Draft Layout Blueprint
+relationally, but cannot provide product facts, override Product Fidelity Lock,
+replace Commercial Layout Calibration evidence, or impose a copied layout.
+
+### 5. Build the Communication and Visual Strategy
 
 Define the audience, intended action, three-second takeaway, primary concern, emotional tone, and confirmed communication hierarchy.
 
@@ -79,13 +93,13 @@ direction; do not force the protected product layer to fit it.
 
 Use [references/visual-strategy.md](references/visual-strategy.md) when selecting or comparing directions. Each direction must include Reference Feasibility, required product view, occlusion risk, and Fidelity Risk. Reject or revise directions that require an unavailable or unverified product view.
 
-### 5. Create the Reference Image Usage Plan
+### 6. Create the Reference Image Usage Plan
 
 Before generation, map each Reference ID to the stages where it will be used. State the intended transfer and forbidden transfer for analysis, background generation, product composition, typography, and QA.
 
 Style Reference may transfer only approved style properties. Layout Reference may transfer only layout principles and must not be copied. Official logos and other Brand Assets should be placed directly rather than regenerated.
 
-### 6. Draft the Layout Blueprint
+### 7. Draft the Layout Blueprint
 
 Create and retain a recorded Draft Layout Blueprint for the product, copy,
 negative-space, promotion, CTA, and Brand Asset zones. It must minimally
@@ -112,7 +126,7 @@ Identify protected product areas without introducing fixed product-specific
 dimensions. If the recorded Draft Layout Blueprint is missing, Commercial
 Layout Calibration cannot run and pre-generation status is `BLOCKED`.
 
-### 7. Run Commercial Layout Calibration
+### 8. Run Commercial Layout Calibration
 
 Read [references/commercial-layout-calibration.md](references/commercial-layout-calibration.md).
 Evaluate the recorded Draft Layout Blueprint before generation and retain a
@@ -155,7 +169,7 @@ the Commercial Layout Calibration record is missing, set `PRE-GENERATION
 STATUS = BLOCKED` and do not begin generation. `Not Applicable` does not block
 readiness. Commercial calibration cannot override the Product Fidelity Lock.
 
-### 8. Complete the Pre-generation Handoff
+### 9. Complete the Pre-generation Handoff
 
 Then create and retain a concise Pre-generation Handoff. It must reference
 the recorded Draft Layout Blueprint and Commercial Layout Calibration Record,
@@ -163,7 +177,12 @@ and summarize the Reference Asset Inventory availability statuses, evidence
 conflicts and unresolved Unknowns, Production Mode, Product Fidelity Lock
 statuses, selected direction, Reference Feasibility, Fidelity Risk, Reference
 Image Usage Plan, Layout Blueprint, Thumbnail risk estimate, calibration
-outcome, and outstanding blockers.
+outcome, and outstanding blockers. If Benchmark Layout Retrieval ran, add a
+concise optional summary of resource state, coverage, selected reference IDs
+and declared roles, evidence source (metadata only or inspected benchmark
+image), and any material limitation. If retrieval did not run or was
+unavailable, no benchmark summary is required; benchmark absence never blocks
+readiness.
 
 Set the final readiness status to exactly one of:
 
@@ -174,7 +193,7 @@ Use `READY FOR TEXT-FREE PRODUCTION` only when the selected mode supports the re
 
 This handoff is a readiness checkpoint, not a duplicate of the upstream analysis tables. Do not begin text-free production until it is complete and READY.
 
-### 9. Plan and Produce the Text-free Visual
+### 10. Plan and Produce the Text-free Visual
 
 Use the approved Layout Blueprint for the product, negative space, headline, supporting copy, promotion, CTA, and Brand Assets.
 
@@ -195,7 +214,7 @@ Do not redesign product geometry, rotate or mirror it without support, replace
 materials, change logos, recolor it uncontrollably, or invent supports to solve
 scene integration.
 
-### 10. Add Copy and Brand Assets
+### 11. Add Copy and Brand Assets
 
 Add only confirmed copy. Confirmed copy may be grouped, reduced in secondary
 prominence, or combined into a coherent information module without changing
@@ -206,7 +225,7 @@ logos and product marks. Do not redraw them with a generation model. Create
 separate language variants by default when combined bilingual typography
 would reduce clarity.
 
-### 11. Run Side-by-side Reference QA and Iterate
+### 12. Run Side-by-side Reference QA and Iterate
 
 Use [references/quality-checklist.md](references/quality-checklist.md). Compare the output directly against every applicable PR, PD, and BA reference. Record Pass, Revise, Blocked, or Not Visible for each attribute, assign severity, fix every Blocking or High issue, and re-check the affected criteria. Also complete the rendered commercial-layout recheck described in the checklist using actual rendered evidence, including a consistent reduced-size thumbnail preview and the criterion-specific evidence rules from the calibration reference; it does not replace Side-by-side Reference QA or retroactively validate the pre-generation blueprint. Rendered QA is authoritative when it contradicts the Blueprint. If any applicable rendered commercial CORE item is `Revise`, revise the composition, typography, or background, rerender, and recheck before completion. Without an actual thumbnail inspection, final commercial completion is forbidden.
 
@@ -240,6 +259,7 @@ Return the items relevant to the request:
 - Draft Layout Blueprint;
 - Commercial Layout Calibration record;
 - Pre-generation Handoff with final readiness status;
+- optional Benchmark Layout Reference Set only when retrieval ran;
 - reference-based text-free generation or composition prompt;
 - exact confirmed copy plan;
 - Side-by-side Reference QA, revisions, and final status;
