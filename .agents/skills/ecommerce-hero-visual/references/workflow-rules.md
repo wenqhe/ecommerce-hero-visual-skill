@@ -155,6 +155,13 @@ Generate the background without text, logos, badges, certifications, or a recons
 
 Check product fidelity, crop, scale, occlusion, integration, and negative space before typography.
 
+For raster composition, initialize and retain a concise `Layout Realization
+Record` when compositing the product: actual visible product bounds used for
+scaling rather than only the transparent canvas; intended prominence and
+implemented scale / placement; support-plane geometry, physical contact region,
+placement-depth reasoning, contact-shadow relationship, and rendered preview.
+Mark unavailable measurements as limitations and never invent measured evidence.
+
 When Grounding is `Revise`, prefer corrections in this order: revise or
 regenerate the background / support plane; revise separate contact-shadow /
 cast-shadow layers; revise placement, scale, or non-destructive edge
@@ -174,6 +181,9 @@ Use official Brand Assets directly, especially logos and wordmarks. Do not ask
 a generation model to redraw an official brand asset.
 
 Keep the product as the primary visual focus. Use readable hierarchy and sufficient contrast. Create separate language versions by default when combined bilingual typography would reduce clarity.
+
+After composing typography, add primary-message measured bounds and actual
+typography scale to the Layout Realization Record.
 
 ## Gate 11 — Side-by-side Reference QA and Stop Condition
 
@@ -203,6 +213,16 @@ scale relationship is `Grounding = Revise`. If any applicable rendered CORE item
 revise the composition, typography, or background, rerender, and repeat the
 check. Without actual thumbnail inspection, final commercial completion is
 forbidden. Keep Product Fidelity QA independent and authoritative.
+
+Pre-generation `Calibrated` does not prove the render is correct. If the product
+is visually too small, lacks commercial prominence, appears unsupported,
+conflicts with support-plane perspective, or the primary message is weak, revise
+the responsible parameters, update the Layout Realization Record, rerender, and
+recheck with the existing Rendered QA statuses. Contact with a horizontal edge
+alone does not demonstrate physically plausible scene placement. Do not add a
+separate pass / fail gate for this record.
+After each Rendered QA pass, add the consistent thumbnail findings and parameter
+corrections with rerender results to the record.
 
 Stop only when no Product Fidelity Blocking or High issue remains and no
 applicable rendered commercial CORE item remains `Revise`, or when missing

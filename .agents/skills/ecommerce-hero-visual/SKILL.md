@@ -214,6 +214,14 @@ Do not redesign product geometry, rotate or mirror it without support, replace
 materials, change logos, recolor it uncontrollably, or invent supports to solve
 scene integration.
 
+For raster composition, initialize and retain a concise `Layout Realization
+Record` when compositing the product. Connect the Blueprint to the actual visible
+product bounds used for scaling (not merely the transparent image canvas),
+intended product prominence and implemented scale / placement, support-plane
+geometry, physical contact region, placement-depth reasoning, contact-shadow
+relationship, and rendered preview. If a measurement is unavailable, record the
+limitation; never invent measured evidence.
+
 ### 11. Add Copy and Brand Assets
 
 Add only confirmed copy. Confirmed copy may be grouped, reduced in secondary
@@ -225,9 +233,21 @@ logos and product marks. Do not redraw them with a generation model. Create
 separate language variants by default when combined bilingual typography
 would reduce clarity.
 
+After composing typography, add the primary-message measured bounds and actual
+typography scale to the Layout Realization Record.
+
 ### 12. Run Side-by-side Reference QA and Iterate
 
 Use [references/quality-checklist.md](references/quality-checklist.md). Compare the output directly against every applicable PR, PD, and BA reference. Record Pass, Revise, Blocked, or Not Visible for each attribute, assign severity, fix every Blocking or High issue, and re-check the affected criteria. Also complete the rendered commercial-layout recheck described in the checklist using actual rendered evidence, including a consistent reduced-size thumbnail preview and the criterion-specific evidence rules from the calibration reference; it does not replace Side-by-side Reference QA or retroactively validate the pre-generation blueprint. Rendered QA is authoritative when it contradicts the Blueprint. If any applicable rendered commercial CORE item is `Revise`, revise the composition, typography, or background, rerender, and recheck before completion. Without an actual thumbnail inspection, final commercial completion is forbidden.
+
+A `Calibrated` Blueprint does not prove the render is correct. If the rendered
+product is visually too small, lacks commercial prominence, appears unsupported,
+conflicts with support-plane perspective, or the primary message is weak, revise
+the responsible composition parameters, update the Layout Realization Record,
+rerender, and recheck using the existing Rendered QA statuses. Contact with a
+horizontal edge alone is not evidence of physically plausible scene placement.
+After each Rendered QA pass, add the consistent thumbnail inspection results and
+every parameter correction with its rerender result to the record.
 
 Completion requires either:
 
@@ -264,6 +284,7 @@ Return the items relevant to the request:
 - exact confirmed copy plan;
 - Side-by-side Reference QA, revisions, and final status;
 - rendered commercial-layout recheck and commercial completion status;
+- Layout Realization Record for raster composition;
 - final visual variants when capability and required approved assets are available.
 
 ## Examples
