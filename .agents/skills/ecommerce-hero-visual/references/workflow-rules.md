@@ -185,6 +185,36 @@ Keep the product as the primary visual focus. Use readable hierarchy and suffici
 After composing typography, add primary-message measured bounds and actual
 typography scale to the Layout Realization Record.
 
+For raster typography, invoke the reusable runtime from the repository root
+(requires Pillow and fontTools):
+
+```sh
+python .agents/skills/ecommerce-hero-visual/scripts/typography_runtime.py --base text-free.png --layout layout.json --output composed.png --thumbnail thumbnail.png --report typography-report.json
+```
+
+The JSON `texts` list requires `text`, `position: [x, y]`, `font` (actual file path,
+relative to the JSON if not absolute), `size` (pixel size), `weight` (number or null
+to retain the font default), `color` (Pillow color string or RGB/RGBA array), and
+`role` per item; optional fields are `id`, `font_index`, and multiline `spacing`.
+Positions are Pillow text origins; use measured textbbox for visible bounds.
+Provide `protected_regions: [{"id": "product", "bbox": [left, top, right, bottom]}]`
+for protected product / brand areas. `contrast_warning_ratio` is optional and
+configurable; its default 3.0 is an auxiliary warning threshold, not visual approval.
+The script docstring gives a complete schema example. Missing fonts / glyphs,
+unsupported weights, and out-of-range real variable axes produce explicit errors
+without fallback. Protection overlaps abort image output; text overlaps and local
+background contrast risk remain measured evidence. This is input enforcement,
+not another commercial pass / fail gate. The runtime only draws requested text;
+it does not generate backgrounds, alter product layers, or redraw brand Logos.
+Link the JSON report and output paths into the existing Layout Realization Record
+after typography, retaining actual font axes, textbbox, scale, overlaps, contrast
+and unavailable-measurement limitations. Inspect the composition and exact 224x280
+thumbnail in existing Rendered QA; the runtime preserves source aspect ratio with
+centered letterboxing and reports actual scale, resized image size, and padding.
+Output creation is not thumbnail inspection.
+If visual inspection fails, adjust task-specific parameters and rerun from the
+text-free base, then append the inspection, corrections, and rerender result after QA.
+
 ## Gate 11 — Side-by-side Reference QA and Stop Condition
 
 Compare the output directly against every applicable PR, PD, and BA asset. Use Pass, Revise, Blocked, or Not Visible and assign a severity to every mismatch.

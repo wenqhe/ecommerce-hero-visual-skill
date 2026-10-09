@@ -236,6 +236,15 @@ would reduce clarity.
 After composing typography, add the primary-message measured bounds and actual
 typography scale to the Layout Realization Record.
 
+For raster text composition, use [scripts/typography_runtime.py](scripts/typography_runtime.py)
+on the verified text-free composite with a task-specific JSON layout. Follow the
+invocation and input contract in [references/workflow-rules.md](references/workflow-rules.md),
+Gate 10. Retain its font / axis evidence, actual textbbox and typography scale,
+overlap findings, contrast limitations, and output paths in the Layout Realization
+Record. Inspect both outputs in the existing Rendered QA; tool execution and
+contrast measurements do not establish visual approval. If visual inspection
+fails, adjust the layout parameters, rerun on the same text-free base, and recheck.
+
 ### 12. Run Side-by-side Reference QA and Iterate
 
 Use [references/quality-checklist.md](references/quality-checklist.md). Compare the output directly against every applicable PR, PD, and BA reference. Record Pass, Revise, Blocked, or Not Visible for each attribute, assign severity, fix every Blocking or High issue, and re-check the affected criteria. Also complete the rendered commercial-layout recheck described in the checklist using actual rendered evidence, including a consistent reduced-size thumbnail preview and the criterion-specific evidence rules from the calibration reference; it does not replace Side-by-side Reference QA or retroactively validate the pre-generation blueprint. Rendered QA is authoritative when it contradicts the Blueprint. If any applicable rendered commercial CORE item is `Revise`, revise the composition, typography, or background, rerender, and recheck before completion. Without an actual thumbnail inspection, final commercial completion is forbidden.
