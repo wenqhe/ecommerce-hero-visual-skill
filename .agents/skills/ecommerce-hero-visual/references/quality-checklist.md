@@ -89,6 +89,12 @@ Commercial Layout Calibration or Side-by-side Reference QA.
 - mobile-thumbnail clarity;
 - visual reading order.
 
+At full size, visually check the complete type hierarchy defined in workflow
+Gate 10, including middle-tier prominence; readable text can still be too weak.
+Check module rhythm, spacing within / between groups, coordinated price / date /
+CTA placement, and whether scene structural lines disrupt information grouping.
+Verify related separators, dots, and button backgrounds stayed aligned after moves.
+
 Do not treat a pre-generation blueprint status as proof that the rendered
 image has passed. Recheck contrast, scale, occlusion, and grounding on the
 actual composition. Inspect a consistent reduced-size thumbnail and record
@@ -106,10 +112,10 @@ intentional line breaks, supporting-information grouping, and commercial-anchor
 clarity would improve immediate commercial recognition, mark typography
 `Revise`; if further enlargement would materially damage one of those
 relationships, `Calibrated` requires explicit evidence. This evaluates visual
-prominence, not merely readability. In the reduced-size thumbnail, distinguish
-readable from commercially prominent: the primary message, supporting
-information, and commercial anchor when applicable must remain immediately
-distinguishable. If the primary message remains technically readable but
+prominence, not merely readability. In the reduced-size thumbnail, prioritize
+immediate recognition of the headline / primary message, product, and price when
+present; supporting modules should retain hierarchy, but every secondary text item
+need not be readable word for word. If the primary message is technically readable but
 visually collapses into ordinary supporting copy, mark typography `Revise`.
 If rendered bilingual density reduces useful typography or product prominence,
 mark typography `Revise`. Rendered evidence is authoritative when it
@@ -140,10 +146,16 @@ intentionally suspended product onto a support plane; require explicit,
 coherent suspension instead, without inventing wires, stands, mounts, or
 hidden support hardware.
 
+Typography Runtime supplies font measurements, conflicts, and contrast-risk
+evidence; non-overlapping textbbox, no contrast warnings, or exit code 0 cannot
+establish `COMMERCIAL LAYOUT PASSED`. Visual approval requires information
+prominence, spatial relationships, module rhythm, and actual thumbnail inspection.
+Keep findings and parameter corrections in the existing Layout Realization Record.
+
 If any applicable rendered commercial CORE item is `Revise`:
 
 1. identify the layout problem;
-2. revise composition, typography, or background;
+2. revise the responsible layout parameters, composition, typography, or background;
 3. rerender the visual;
 4. repeat the rendered commercial recheck.
 
@@ -155,7 +167,7 @@ remains `Revise`. Product Fidelity QA remains independent and authoritative.
 Report exactly one commercial completion status separately from Product
 Fidelity QA:
 
-- `COMMERCIAL LAYOUT PASSED` — no applicable rendered commercial CORE item is `Revise`;
+- `COMMERCIAL LAYOUT PASSED` — visual recheck at full size and thumbnail is complete and no applicable rendered commercial CORE item is `Revise`;
 - `COMMERCIAL LAYOUT REQUIRES REVISION` — at least one applicable rendered commercial CORE item is `Revise`;
 - `BLOCKED` — required evidence or a required workflow artifact is missing or prevents correction.
 

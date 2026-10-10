@@ -101,6 +101,10 @@ Style Reference may transfer only approved style properties. Layout Reference ma
 
 ### 7. Draft the Layout Blueprint
 
+Before fixing product or text coordinates, apply the scene-space analysis in
+[references/workflow-rules.md](references/workflow-rules.md), Gate 6; retain its
+placement implications in the existing Blueprint and Support Plane and Contact Plan.
+
 Create and retain a recorded Draft Layout Blueprint for the product, copy,
 negative-space, promotion, CTA, and Brand Asset zones. It must minimally
 record the selected archetype, intended product zone and prominence, copy
@@ -233,8 +237,8 @@ logos and product marks. Do not redraw them with a generation model. Create
 separate language variants by default when combined bilingual typography
 would reduce clarity.
 
-After composing typography, add the primary-message measured bounds and actual
-typography scale to the Layout Realization Record.
+After composing typography, add measured bounds and actual typography scale for
+the full type hierarchy to the existing Layout Realization Record.
 
 For raster text composition, use [scripts/typography_runtime.py](scripts/typography_runtime.py)
 on the verified text-free composite with a task-specific JSON layout. Follow the

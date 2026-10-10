@@ -66,6 +66,12 @@ Mark unused references explicitly. Do not allow SR or LR assets to override conf
 
 ## Gate 6 — Draft Layout Blueprint
 
+Before fixing product or text coordinates, analyze the available background or
+planned scene: support surfaces, perspective, wall-floor junctions, tabletop rear
+edges, important structural lines, and usable text areas. Keep concise placement
+implications in the existing Blueprint / Support Plane and Contact Plan; coordinate
+alignment alone proves neither grounding nor a sensible text layout.
+
 After the Reference Image Usage Plan, create and retain a Draft Layout
 Blueprint for product, copy, negative-space, promotion, CTA, and Brand Asset
 zones. It must minimally record the selected archetype, product zone and
@@ -153,7 +159,9 @@ Use this priority:
 
 Generate the background without text, logos, badges, certifications, or a reconstructed target product. Composite or guide the product only according to the Reference Image Usage Plan and Product Fidelity Lock.
 
-Check product fidelity, crop, scale, occlusion, integration, and negative space before typography.
+Before locking placement, repeat the Blueprint scene-space analysis on the actual
+background and adapt product contact and text areas to its geometry. Check product
+fidelity, crop, scale, occlusion, integration, and negative space before typography.
 
 For raster composition, initialize and retain a concise `Layout Realization
 Record` when compositing the product: actual visible product bounds used for
@@ -182,8 +190,16 @@ a generation model to redraw an official brand asset.
 
 Keep the product as the primary visual focus. Use readable hierarchy and sufficient contrast. Create separate language versions by default when combined bilingual typography would reduce clarity.
 
-After composing typography, add primary-message measured bounds and actual
-typography scale to the Layout Realization Record.
+Plan the full type hierarchy: headline, product name, selling points, price,
+campaign labels, CTA, and dates when present. All copy must be clearly readable
+at full size; give middle-tier information enough commercial recognition rather
+than allowing only the headline and price to stand out while everything else is tiny.
+Organize modules around actual usable space, checking visual spacing within and
+between groups. Coordinate price, dates, and CTA as related information; reposition
+modules when needed to avoid unjustified crossings of scene structural lines.
+Related separators, dots, and button backgrounds must move with their text.
+After composing typography, add measured bounds and actual typography scale for
+the full hierarchy to the existing Layout Realization Record, without a duplicate log.
 
 For raster typography, invoke the reusable runtime from the repository root
 (requires Pillow and fontTools):
