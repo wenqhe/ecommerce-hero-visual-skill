@@ -2,6 +2,23 @@
 
 Use these gates in order. Do not skip a failed gate by filling missing evidence with plausible content.
 
+Human approval is a separate record from technical `READY` / `BLOCKED` and
+Commercial Layout QA. At each Human Gate, submit the listed existing workflow
+artifacts, record `Pending` while waiting and then the decision as `Approved`,
+`Changes requested`, or `Returned`. Record the artifact version, approver, scope,
+and decision time in the Brief, Visual Strategy / Handoff, or Rendered QA record
+already in use. Pause while a decision is pending: do not infer approval from silence or
+continue automatically. Existing authorization may be reused for H1 or H2 only
+when it is explicit preauthorization for that gate's scope and its recorded
+version matches the submitted artifacts; record its source, scope, and version
+and do not ask the same question again. General project authorization cannot
+substitute for H3 review of the actual rendered image and matching version. A human approval cannot cure
+missing facts, unavailable evidence, or a Product Fidelity / factual blocker.
+Reuse the existing Product Fidelity Lock, Layout Realization Record,
+Typography Runtime, and Rendered QA; embed gate decisions in those records or
+the existing Brief / Handoff rather than creating duplicate gates, status
+systems, or reports.
+
 ## Gate 1 — Reference Asset Inventory
 
 Inventory every supplied Product Reference Image, Product Detail Reference, Brand Asset, Style Reference, and Layout Reference. Assign stable Reference IDs and record authority, visible coverage, approved use, prohibited use, and limitations.
@@ -40,6 +57,23 @@ metadata and, only when actually available and opened, selected images as
 advisory comparative context. Retrieval failure or absence does not block the
 workflow.
 
+## Human Gate H1 — Input Baseline Confirmation
+
+Trigger H1 after input and material verification is complete (Reference Asset
+Inventory, confirmed product facts and copy, authorization, official brand
+guidance, hard limits, Product Fidelity Lock, and Product Lighting and Contact
+Profile) and before Visual Strategy. Submit those existing records plus the
+Brief's evidence / conflict list. The human confirms or corrects the factual
+baseline, copy, authorization scope, official brand requirements, prohibited
+elements, and hard platform or project limits. Record the decision, approver,
+scope, and version in the existing Brief / input record.
+
+`Approved` permits Gate 4. `Changes requested` updates the input organization
+and repeats the affected analysis. `Returned` sends the work to Gate 1 for
+input organization. Keep H1 pending until an explicit decision arrives; silence
+is not approval. An authorization already explicit in the Brief may be recorded and
+reused, but it does not waive unresolved evidence or fidelity blockers.
+
 ## Gate 4 — Communication Accuracy and Strategy Feasibility
 
 Complete the brief, evidence classification, communication hierarchy, and visual direction before generation. Confirmed copy controls factual truth but does not require equal visual weight or a separate visual zone. Grouping or reducing secondary prominence is allowed when meaning is preserved. Do not add unconfirmed substitute copy merely to improve layout.
@@ -52,6 +86,22 @@ or direction, not by forcing the protected product layer to fit.
 Marketing expression may improve clarity or tone but must not strengthen, broaden, or certify an underlying fact. For example, a confirmed 12-hour claim may be restated with the same duration, but not as all-day performance, constant performance, or a certification.
 
 For every direction, report required product view, supporting Reference IDs, Reference Feasibility, occlusion risk, and Fidelity Risk. Reject directions that require an unsupported view, hidden detail, invented accessory, or product redesign.
+
+Keep a concise `Project Style Constraint Record` in the existing Brief or
+Visual Strategy. Its fields are: source and authority, style keywords, font(s),
+palette, image style, prohibited elements, platform limits, confirmation
+status, and version. Mark each source as an official brand guideline, an
+explicit user requirement, or an AI design suggestion. Skill-wide hard
+constraints (product fidelity, factual accuracy, authentic Brand Assets,
+readability, and platform rules) remain in force. If no official font is
+specified, candidate fonts remain AI proposals and must not be presented as
+official brand typography.
+
+Apply the record in three levels: (1) Skill global hard constraints, which
+always apply; (2) project brand hard constraints from a verified brand source
+or explicit user requirement, confirmed at H1; and (3) project design choices
+such as style keywords, candidate font pairing, palette, scene, and composition,
+proposed by AI and frozen at H2. The third level may not weaken the first two.
 
 ## Gate 5 — Reference Image Usage Plan
 
@@ -143,11 +193,31 @@ and Commercial Layout Calibration Record. Summarize the Reference Asset
 Inventory availability statuses, evidence conflicts and Unknowns, Production
 Mode, Product Fidelity Lock statuses, selected direction, Reference
 Feasibility, Fidelity Risk, Reference Image Usage Plan, Layout Blueprint,
-Thumbnail risk estimate, calibration outcome, and outstanding blockers.
+Thumbnail risk estimate, calibration outcome, Project Style Constraint Record
+version, and outstanding blockers.
 
 The handoff must end with exactly one status: `READY FOR TEXT-FREE PRODUCTION` or `BLOCKED`. READY requires a supported production mode, required Present evidence, a supported intended view, no unresolved conflict or blocker, a direction that preserves the Product Fidelity Lock, complete recorded Blueprint and Calibration artifacts, no unresolved applicable pre-generation CORE Commercial Layout Calibration `Revise`, and no material unresolved Thumbnail risk estimate. Rendered thumbnail evidence is not required for this pre-generation status. If the Handoff is missing, incomplete, not recorded, or not READY, do not begin generation; a generated result is not evidence that READY was reached. Use BLOCKED when required evidence is missing, unavailable, conflicting, insufficient, an artifact is missing, or an applicable pre-generation CORE calibration issue or material thumbnail risk remains unresolved. Planning-only Mode cannot receive READY for a real product-fidelity visual without a usable Present PR. Keep the handoff as a concise readiness checkpoint rather than duplicating upstream analysis.
 
 Do not begin text-free production until the handoff is complete and READY.
+
+## Human Gate H2 — Visual Direction and Project Style Freeze
+
+Trigger H2 after Visual Strategy, Draft Layout Blueprint, Commercial Layout
+Calibration, and the Pre-generation Handoff are complete, and immediately
+before Gate 9 generation. Submit the selected direction, required product view,
+Reference Image Usage Plan, Blueprint, calibration result, Handoff, and the
+Project Style Constraint Record. The human confirms the visual direction,
+scene, composition, and project style choices (keywords, font strategy,
+palette, image style, prohibited elements, and platform limits).
+
+`Approved` freezes that direction and record for production. `Changes requested`
+returns to the relevant strategy or layout planning step; `Returned`
+rejects the submission and restarts the affected Gate 4 or Gate 6 work. Record
+the decision, approver, scope, and incremented artifact version in the existing
+Visual Strategy / Handoff. Do not generate while H2 is pending. After approval,
+AI may adjust size, spacing, and position within the frozen direction. A core
+style, font-strategy, or palette change requires a new H2 decision; ordinary
+local layout polish does not.
 
 ## Gate 9 — Text-free Production
 
@@ -272,10 +342,42 @@ corrections with rerender results to the record.
 
 Stop only when no Product Fidelity Blocking or High issue remains and no
 applicable rendered commercial CORE item remains `Revise`, or when missing
-verified input prevents correction. In the latter case, state the blocker and
-do not describe the output as final. Report commercial completion separately
+verified input prevents correction. If the missing input prevents correction,
+set or retain `BLOCKED`, stop, and report the blocking reason; do not submit H3.
+After the issue is resolved, repeat the applicable checks. Submit H3 only when
+no major issue remains unresolved and the status is not `BLOCKED`. This is AI QA
+completion and permits H3 submission only; final formal delivery requires H3's
+explicit approval of the actual rendered image and matching artifact version.
+Report commercial completion separately
 as `COMMERCIAL LAYOUT PASSED`, `COMMERCIAL LAYOUT REQUIRES REVISION`, or
 `BLOCKED`.
+
+## Human Gate H3 — Rendered Deliverable Review
+
+Trigger H3 after Gate 11 Rendered QA is complete. Submit the full-size image,
+the consistent thumbnail, the existing Side-by-side / rendered QA findings,
+and a concise issue list with severity, affected area, and correction status.
+The human confirms whether the rendered result is acceptable for the approved
+direction and style. Record the decision, approver, submitted artifact
+versions, scope, and decision time in the existing Rendered QA / Layout
+Realization Record.
+
+Keep H3 `Pending` until the human decision arrives; do not release or publish
+while it is pending.
+
+`Approved` completes the human review of the submitted actual image and matching
+artifact version; `Changes requested` or `Returned` maps
+the issue to its owning production step: input facts, authorization, or
+brand-source issues return to Gate 1 or Gate 3 (and may require H1); copy
+content, strategy, scene, or composition issues return to Gate 4 or Gate 6
+(and may require H2); text, font, logo placement, or typography issues return
+to Gate 10; rendering,
+lighting, grounding, crop, or integration issues return to Gate 9; QA evidence
+or thumbnail issues return to Gate 11. Rerender and repeat the applicable QA
+before H3 again. H3 cannot approve unresolved Product Fidelity or factual
+blockers. If formal publication authorization is required, record it
+separately against this approved artifact without repeating the approved
+aesthetic review.
 
 ## Commercial Clarity
 

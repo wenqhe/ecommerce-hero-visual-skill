@@ -20,6 +20,10 @@ Create commercially clear product hero visuals while preserving product identity
 - Never reconstruct a real product from text alone.
 - Add typography and official Brand Assets after the text-free visual is verified.
 - Perform Side-by-side Reference QA, revise material issues, and re-check before declaring completion.
+- Use the three Human Gates in [references/workflow-rules.md](references/workflow-rules.md): H1 confirms the input baseline, H2 freezes the visual direction and Project Style Constraint Record, and H3 records human review of the rendered deliverable. Do not continue past a required gate without explicit approval; human approval is separate from `READY` / `BLOCKED` and Commercial Layout QA.
+- AI QA completion is technical only; it is eligible for H3 only when no major issue remains unresolved and the status is not `BLOCKED`. Final formal delivery requires H3's explicit approval of the actual rendered image and its corresponding artifact version.
+- Reuse existing authorization for H1 or H2 only when it is explicit preauthorization for that gate's scope and its recorded version matches the submitted artifacts. General project authorization never substitutes for H3 review of the actual image and matching version.
+- Keep project constraints in the existing Brief / Visual Strategy as a concise `Project Style Constraint Record`. Distinguish Skill global hard constraints, verified project brand requirements or explicit user requirements, and AI design suggestions. A proposed font is not an official brand font unless an authoritative source says so.
 
 ## Workflow
 
@@ -68,6 +72,11 @@ suspension intent, and Unknown / unverified properties. Record only visibly
 supported evidence. Do not infer hidden contact surfaces, support hardware, or
 unseen lighting behavior.
 
+After the input inventory, confirmed facts and copy, authorization, official
+brand guidance, hard limits, Product Fidelity Lock, and Product Lighting and
+Contact Profile are assembled, stop at Human Gate H1. Record its decision and
+version in the existing Brief / input record before continuing to strategy.
+
 ### 4. Classify the Task and Retrieve Optional Layout Benchmarks
 
 After the Product Fidelity Lock and Product Lighting and Contact Profile are
@@ -92,6 +101,13 @@ Contact Profile. Resolve an obvious incompatibility by revising the scene or
 direction; do not force the protected product layer to fit it.
 
 Use [references/visual-strategy.md](references/visual-strategy.md) when selecting or comparing directions. Each direction must include Reference Feasibility, required product view, occlusion risk, and Fidelity Risk. Reject or revise directions that require an unavailable or unverified product view.
+
+Add a concise `Project Style Constraint Record` to the existing Brief or Visual
+Strategy. Record: source and authority, style keywords, font(s), palette, image
+style, prohibited elements, platform limits, confirmation status, and version.
+Label each entry as an official brand guideline, an explicit user requirement,
+or an AI design suggestion. If no brand font is specified, list candidates as
+proposals only; do not label them official.
 
 ### 6. Create the Reference Image Usage Plan
 
@@ -181,7 +197,7 @@ and summarize the Reference Asset Inventory availability statuses, evidence
 conflicts and unresolved Unknowns, Production Mode, Product Fidelity Lock
 statuses, selected direction, Reference Feasibility, Fidelity Risk, Reference
 Image Usage Plan, Layout Blueprint, Thumbnail risk estimate, calibration
-outcome, and outstanding blockers. If Benchmark Layout Retrieval ran, add a
+outcome, Project Style Constraint Record version, and outstanding blockers. If Benchmark Layout Retrieval ran, add a
 concise optional summary of resource state, coverage, selected reference IDs
 and declared roles, evidence source (metadata only or inspected benchmark
 image), and any material limitation. If retrieval did not run or was
@@ -195,7 +211,7 @@ Set the final readiness status to exactly one of:
 
 Use `READY FOR TEXT-FREE PRODUCTION` only when the selected mode supports the requested stage, required Present evidence exists, the intended product view is supported, no unresolved conflict or blocker prevents faithful production, the selected direction can preserve the Product Fidelity Lock, the recorded Draft Layout Blueprint and Commercial Layout Calibration Record are complete, no applicable pre-generation CORE Commercial Layout Calibration diagnostic remains `Revise`, and the Thumbnail risk estimate has no material unresolved risk. Rendered `Mobile-thumbnail clarity` is not required for this pre-generation status. If the Handoff is missing, incomplete, not recorded, or not READY, do not begin generation; a generated result is not evidence that READY was reached. Use `BLOCKED` when required evidence is missing, unavailable, conflicting, insufficient, an artifact is missing, or an applicable pre-generation CORE calibration issue or material thumbnail risk remains unresolved. Planning-only Mode may continue planning, but it cannot receive READY for a real product-fidelity visual without a usable Present PR.
 
-This handoff is a readiness checkpoint, not a duplicate of the upstream analysis tables. Do not begin text-free production until it is complete and READY.
+This handoff is a readiness checkpoint, not a duplicate of the upstream analysis tables. Do not begin text-free production until it is complete, READY, and Human Gate H2 has approved the submitted direction and Project Style Constraint Record. A technical `READY` or calibrated result does not imply human approval.
 
 ### 10. Plan and Produce the Text-free Visual
 
@@ -237,6 +253,11 @@ logos and product marks. Do not redraw them with a generation model. Create
 separate language variants by default when combined bilingual typography
 would reduce clarity.
 
+After H2 approval, local adjustments to size, spacing, and position are allowed
+inside the frozen direction and style constraints. A change to the core visual
+style, font strategy, or palette requires a new H2 decision; routine layout
+polish does not create another gate.
+
 After composing typography, add measured bounds and actual typography scale for
 the full type hierarchy to the existing Layout Realization Record.
 
@@ -262,10 +283,24 @@ horizontal edge alone is not evidence of physically plausible scene placement.
 After each Rendered QA pass, add the consistent thumbnail inspection results and
 every parameter correction with its rerender result to the record.
 
-Completion requires either:
+AI QA reports either:
 
 - no unresolved Product Fidelity Blocking or High issue and no unresolved applicable rendered Commercial Layout CORE `Revise`; or
 - a clear `BLOCKED` status explaining which verified input or required artifact is missing.
+
+Submit H3 only when the first condition holds and the AI QA status is not
+`BLOCKED`. If the result is `BLOCKED`, stop and report the blocking reason;
+after the issue is resolved, repeat the applicable checks and enter H3 only
+when the first condition holds and the status is no longer `BLOCKED`. This
+technical completion only permits submission to H3. It does not mark the
+visual as finally delivered; final delivery requires H3 approval of the actual
+rendered image and the matching artifact version.
+
+After Rendered QA is complete, stop at Human Gate H3 with the full-size image,
+thumbnail, and concise issue list. Record the human decision in the existing
+Rendered QA / Layout Realization Record. A requested correction returns to the
+production stage that owns the issue; no final handoff or publication may be
+treated as approved from silence.
 
 Commercial completion status must be reported separately as exactly one of:
 
@@ -292,13 +327,14 @@ Return the items relevant to the request:
 - Draft Layout Blueprint;
 - Commercial Layout Calibration record;
 - Pre-generation Handoff with final readiness status;
+- H1 input-baseline decision, H2 frozen direction and Project Style Constraint Record, and H3 rendered-review decision, recorded in the existing Brief, Visual Strategy, Handoff, and Rendered QA artifacts;
 - optional Benchmark Layout Reference Set only when retrieval ran;
 - reference-based text-free generation or composition prompt;
 - exact confirmed copy plan;
 - Side-by-side Reference QA, revisions, and final status;
 - rendered commercial-layout recheck and commercial completion status;
 - Layout Realization Record for raster composition;
-- final visual variants when capability and required approved assets are available.
+- final visual variants when capability and required approved assets are available and H3 has approved the matching artifact version.
 
 ## Examples
 

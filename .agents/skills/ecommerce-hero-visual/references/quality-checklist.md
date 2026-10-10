@@ -7,6 +7,43 @@ recheck use the separate statuses `Calibrated`, `Revise`, and `Not Applicable`.
 Do not mark a final visual complete while a Blocking or High issue or an
 applicable rendered commercial CORE `Revise` remains.
 
+Human Gate decisions are recorded separately from `READY` / `BLOCKED` and
+Commercial Layout QA. AI QA completion means the technical checks pass and the
+result may be submitted to H3; it is not final delivery. Final formal delivery
+requires H3's explicit approval of the actual rendered image and its matching
+artifact version. A technical pass does not imply human approval, and silence
+is not approval. Reuse existing authorization for H1 or H2 only when it is
+explicit preauthorization for that gate's scope and its recorded version
+matches the submitted artifacts. General project authorization cannot replace
+H3 review of the actual image and version.
+
+## Human Gate and Project Style Checks
+
+- H1 was held after material verification with the Brief, facts and copy,
+  authorization, official brand guidance, hard limits, Reference Asset
+  Inventory, and Product Fidelity Lock submitted; its explicit decision,
+  approver, scope, and version are recorded in the existing input record.
+- H1 changes or returns are routed to input organization or the affected
+  product-analysis step; approval does not cover missing evidence or factual
+  conflicts.
+- The existing Brief / Visual Strategy contains a concise `Project Style
+  Constraint Record` with source and authority, style keywords, font(s),
+  palette, image style, prohibited elements, platform limits, confirmation
+  status, and version.
+- The record distinguishes Skill global hard constraints, verified project
+  brand requirements, explicit user requirements, and AI design suggestions.
+  Candidate fonts without an authoritative brand source are labeled proposals.
+- H2 was held after Visual Strategy, Layout Blueprint, Commercial Layout
+  Calibration, and Pre-generation Handoff, before generation; its explicit
+  decision, scope, approver, and frozen record version are recorded.
+- After H2, size, spacing, and position may be tuned within the approved
+  direction. A core style, font strategy, or palette change has a new H2
+  decision; routine layout polish does not.
+- H3 was held after Rendered QA with the full-size image, thumbnail, and issue
+  list submitted. Its explicit decision and artifact versions are recorded in
+  the existing Rendered QA / Layout Realization Record. A rejected item is
+  routed to the owning production step and rechecked before H3 repeats.
+
 ## Reference Intake and Traceability
 
 - Does every supplied reference have a stable Reference ID?
@@ -171,6 +208,9 @@ Fidelity QA:
 - `COMMERCIAL LAYOUT REQUIRES REVISION` — at least one applicable rendered commercial CORE item is `Revise`;
 - `BLOCKED` — required evidence or a required workflow artifact is missing or prevents correction.
 
+These remain technical QA results. Even `COMMERCIAL LAYOUT PASSED` only permits
+H3 submission and does not imply final human approval.
+
 ## Severity
 
 - Blocking: product identity changed, a product structure or fact was invented, the wrong product or logo appears, or no valid PR supports the output;
@@ -198,4 +238,6 @@ Completion requires:
 - no invented product fact or structure;
 - a completed Side-by-side Reference QA record;
 - a completed rendered commercial-layout recheck and commercial completion status;
+- an explicit H3 human approval for the rendered deliverable (and any separate
+  formal publication authorization when required);
 - or an explicit `BLOCKED` status explaining which verified input or required artifact is missing.
